@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  number: MyString
+  pattern: MyString
+  stash: false
+  image: MyString
+
+two:
+  type: 
+  number: MyString
+  pattern: MyString
+  stash: false
+  image: MyString

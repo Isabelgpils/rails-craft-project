@@ -1,0 +1,2 @@
+class MetallicsController < ApplicationController
+end
