@@ -1,0 +1,12 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @bead %>
+  <%= image_tag @bead.image %>
+  <div>
+    <%= link_to "Edit this bead", edit_bead_path(@bead) %> |
+    <%= link_to "Back to beads", beads_path %>
+
+    <%= button_to "Destroy this bead", @bead, method: :delete %>
+  </div>
+</div>

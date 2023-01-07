@@ -1,0 +1,13 @@
+ <div class="container"> 
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @silk %>
+    <%= image_tag @silk.image %>
+
+  <div>
+    <%= link_to "Edit this silk", edit_silk_path(@silk) %> |
+    <%= link_to "Back to silks", silks_path %>
+
+    <%= button_to "Destroy this silk", @silk, method: :delete %>
+  </div>
+</div>

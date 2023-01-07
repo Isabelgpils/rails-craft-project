@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  color: MyString
+  rgb_value: MyString
+  image: MyString
+  stash: MyString
+
+two:
+  number: MyString
+  color: MyString
+  rgb_value: MyString
+  image: MyString
+  stash: MyString

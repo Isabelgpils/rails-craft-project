@@ -1,0 +1,12 @@
+<main class= "container" >  
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @dmc %>
+  <%= image_tag @dmc.image %>
+  <div>
+    <%= link_to "Edit this dmc", edit_dmc_path(@dmc) %> |
+    <%= link_to "Back to dmcs", dmcs_path %>
+
+    <%= button_to "Destroy this dmc", @dmc, method: :delete %>
+  </div>
+</main>

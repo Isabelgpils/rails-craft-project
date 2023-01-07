@@ -3,19 +3,11 @@
 one:
   brand: MyString
   number: MyString
-  size: MyString
   image: MyString
-  thumbnail: MyString
-  name: MyString
-  stash: false
-  finished: false
+  stash: MyString
 
 two:
   brand: MyString
   number: MyString
-  size: MyString
   image: MyString
-  thumbnail: MyString
-  name: MyString
-  stash: false
-  finished: false
+  stash: MyString

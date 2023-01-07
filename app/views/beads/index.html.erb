@@ -1,0 +1,16 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Beads</h1>
+
+  <div id="beads">
+    <% @beads.each do |bead| %>
+      <%= render bead %>
+      <p>
+        <%= link_to "Show this bead", bead %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New bead", new_bead_path %>
+</div>

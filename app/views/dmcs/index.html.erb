@@ -1,0 +1,16 @@
+<main class= "container" >
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Dmcs</h1>
+
+  <div id="dmcs">
+    <% @dmcs.each do |dmc| %>
+      <%= render dmc %>
+      <p>
+        <%= link_to "Show this dmc", dmc %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New dmc", new_dmc_path %>
+</main>

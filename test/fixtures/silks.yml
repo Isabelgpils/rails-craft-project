@@ -1,17 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  number: 1
   brand: MyString
+  type: 
+  number: MyString
   color: MyString
   pattern: MyString
-  stash: false
   image: MyString
+  stash: MyString
 
 two:
-  number: 1
   brand: MyString
+  type: 
+  number: MyString
   color: MyString
   pattern: MyString
-  stash: false
   image: MyString
+  stash: MyString

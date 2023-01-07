@@ -1,0 +1,16 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Metallics</h1>
+
+  <div id="metallics">
+    <% @metallics.each do |metallic| %>
+      <%= render metallic %>
+      <p>
+        <%= link_to "Show this metallic", metallic %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New metallic", new_metallic_path %>
+</div>
