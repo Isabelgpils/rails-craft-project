@@ -1,14 +1,10 @@
-<h1> Show Updated/Current </h1>
+<p style="color: green"><%= notice %></p>
 
-<h3><%= @pattern.name %> </h3>
-<h1>Patterns</h1>
+<%= render @pattern %>
+<%= image_tag @pattern.image %>
+<div>
+  <%= link_to "Edit this pattern", edit_pattern_path(@pattern) %> |
+  <%= link_to "Back to patterns", patterns_path %>
 
-<ul>
-  <% @patterns.each do |pattern| %>
-    <h3>pattern.brand </h3>
-    <h5>pattern.size </h5>
-    <h5> pattern.stash </h5>
-
-  <% end %>
-</ul>
-<%= link_to "New Pattern", new_pattern_path %>
+  <%= button_to "Destroy this pattern", @pattern, method: :delete %>
+</div>

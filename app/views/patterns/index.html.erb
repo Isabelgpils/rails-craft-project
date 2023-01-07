@@ -1,3 +1,16 @@
-<h1>All Patterns</h1>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
 
-<%= link_to "New Pattern", new_pattern_path %>
+  <h1>Patterns</h1>
+
+  <div id="patterns">
+    <% @patterns.each do |pattern| %>
+      <%= render pattern %>
+      <p>
+        <%= link_to "Show this pattern", pattern %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New pattern", new_pattern_path %>
+</div>

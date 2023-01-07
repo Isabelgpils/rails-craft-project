@@ -1,3 +1,3 @@
 class Bead < ApplicationRecord
-    belongs_to :patterns
+    has_one_attached :image
 end

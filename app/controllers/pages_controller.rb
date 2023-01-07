@@ -2,10 +2,13 @@ class PagesController < ApplicationController
   def home
   end
 
-  def projects
+  def patterns
   end
-
-  def threads
+  
+  def dmc
+  end
+  
+  def silks
   end
 
   def metallics
@@ -14,9 +17,5 @@ class PagesController < ApplicationController
   def beads
   end
 
-  def npi
-  end
   
-  def dmc
-  end
 end

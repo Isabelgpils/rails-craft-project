@@ -1,0 +1,12 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @metallic %>
+  <%= image_tag @metallic.image %>
+  <div>
+    <%= link_to "Edit this metallic", edit_metallic_path(@metallic) %> |
+    <%= link_to "Back to metallics", metallics_path %>
+
+    <%= button_to "Destroy this metallic", @metallic, method: :delete %>
+  </div>
+</div>

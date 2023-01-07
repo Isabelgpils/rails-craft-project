@@ -1,0 +1,16 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Silks</h1>
+
+  <div id="silks">
+    <% @silks.each do |silk| %>
+      <%= render silk %>
+      <p>
+        <%= link_to "Show this silk", silk %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New silk", new_silk_path %>
+</div>

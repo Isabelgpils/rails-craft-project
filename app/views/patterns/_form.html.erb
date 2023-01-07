@@ -1,44 +1,38 @@
+<div class="container">
+  <%= form_with(model: pattern) do |form| %>
+    <% if pattern.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(pattern.errors.count, "error") %> prohibited this pattern from being saved:</h2>
 
-<form>
-  <div class="form-group">
-    <%= form_with model: @pattern do |form| %>
-      <label><%= form.label :brand %></label>
-      <input class="form-control"><%= form.text_field :brand %>
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      <%= form.submit %>
+        <ul>
+          <% pattern.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
-  </div>
 
+    <div>
+      <%= form.label :brand, style: "display: block" %>
+      <%= form.text_field :brand %>
+    </div>
 
+    <div>
+      <%= form.label :number, style: "display: block" %>
+      <%= form.text_field :number %>
+    </div>
 
+    <div>
+      <%= form.label :image, style: "display: block" %>
+      <%= form.file_field :image %>
+    </div>
 
-<%= form_with model: @pattern do |form| %>
-  <p>
-    <%= form.label :brand %><br>
-    <%= form.text_field :brand %>
-  </p>
-  <p>
-    <%= form.label :number %><br>
-    <%= form.text_field :number %>
-  </p>
-  <p>
-    <%= form.label :size %><br>
-    <%= form.text_field :size %>
-  </p>
-  <p>
-    <%= form.label :image %><br>
-    <%= form.text_field :image %>
-  </p>
-  <p>
-    <%= form.label :stash%><br>
-    <%= form.text_field :stash %>
-  </p>
-  <p>
-    <%= form.label :finished%><br>
-    <%= form.text_field :finished %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
-
+    <div>
+      <%= form.label :stash, style: "display: block" %>
+      <%= form.text_field :stash %>
+    </div>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
