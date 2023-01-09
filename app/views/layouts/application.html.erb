@@ -11,8 +11,9 @@
   </head>
 
   <body>
+    <header><%= render "layouts/header" %></header>
     <main>
-    <div><%= render "layouts/header" %></div>
+      <% render "layouts/alerts" %>
       <%= yield %>
     </main>
   </body>

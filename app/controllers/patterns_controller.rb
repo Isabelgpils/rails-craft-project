@@ -1,6 +1,6 @@
 class PatternsController < ApplicationController
   before_action :set_pattern, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!
   # GET /patterns or /patterns.json
   def index
     @patterns = Pattern.all
@@ -22,6 +22,7 @@ class PatternsController < ApplicationController
   # POST /patterns or /patterns.json
   def create
     @pattern = Pattern.new(pattern_params)
+    @pattern.user = current_user
 
     respond_to do |format|
       if @pattern.save
@@ -65,6 +66,6 @@ class PatternsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pattern_params
-      params.require(:pattern).permit(:brand, :number, :image, :stash)
+      params.require(:pattern).permit( :brand, :number, :image, :stash)
     end
 end

@@ -2,6 +2,24 @@
   <p style="color: green"><%= notice %></p>
 
   <h1>Patterns</h1>
+  <div id="patterns">
+    <div class="card" style="width: 18rem;">
+      <% @patterns.each do |pattern| %>
+        <%# <%= render pattern %> 
+        <%= image_tag pattern.image, class: "card-img-top" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= pattern.brand%></h5>
+          <p class="card-text">  <%= pattern.number%></p>
+          <p class="card-text">  <%= " Stash?:  #{pattern.stash}" %></p>
+        </div>
+        <p>
+          <%= link_to "Show this pattern", pattern, class: "btn btn-primary" %>
+        </p>
+      <% end %>
+    </div> 
+    <%= link_to "New pattern", new_pattern_path, class: "btn btn-primary" %> 
+  </div>
+
 
   <div id="patterns">
     <% @patterns.each do |pattern| %>
