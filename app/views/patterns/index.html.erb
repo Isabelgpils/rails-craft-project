@@ -1,34 +1,34 @@
 <div class="container">
   <p style="color: green"><%= notice %></p>
 
-  <h1>Patterns</h1>
-  <div id="patterns">
-    <div class="card" style="width: 18rem;">
-      <% @patterns.each do |pattern| %>
+  <h6 class="display-6 mt-5 mb-3 text-align-center"> My Patterns</h6>
+  <%= link_to "New pattern", new_pattern_path, class: "btn btn-secondary" %> 
+  <%# <div class="row text-center align-items-center"> %>
+  <% @patterns.each do |pattern| %>
+    <div class="card-deck">
+      <div id="patterns" class="card mb-5 text-center" style="width: 18rem;">
         <%# <%= render pattern %> 
         <%= image_tag pattern.image, class: "card-img-top" %>
         <div class="card-body">
-          <h5 class="card-title"><%= pattern.brand%></h5>
-          <p class="card-text">  <%= pattern.number%></p>
-          <p class="card-text">  <%= " Stash?:  #{pattern.stash}" %></p>
+          <h5 class="card-title">  <%= pattern.name%></h5>
+          <p class="card-text"><%= "#{pattern.brand} #{pattern.number}"%></p>
+          <%# <p class="card-text">  <%= " In my stash?:  #{pattern.stash}" %></p> 
         </div>
         <p>
-          <%= link_to "Show this pattern", pattern, class: "btn btn-primary" %>
+          <%= link_to "Show this pattern", pattern, class: "btn btn-secondary" %>
         </p>
-      <% end %>
-    </div> 
-    <%= link_to "New pattern", new_pattern_path, class: "btn btn-primary" %> 
-  </div>
-
-
-  <div id="patterns">
-    <% @patterns.each do |pattern| %>
-      <%= render pattern %>
-      <p>
-        <%= link_to "Show this pattern", pattern %>
-      </p>
-    <% end %>
-  </div>
-
-  <%= link_to "New pattern", new_pattern_path %>
+      </div> 
+    </div>
+  <% end %>
 </div>
+
+  <%# <div id="patterns">
+    <% @patterns.each do |pattern| %>
+      <%# <%= render pattern %> 
+      <%# <p> %>
+        <%# <%= link_to "Show this pattern", pattern %> 
+      <%# </p> %>
+    <%# <% end %>
+  <%# </div> %>
+
+  <%# <%= link_to "New pattern", new_pattern_path %> 

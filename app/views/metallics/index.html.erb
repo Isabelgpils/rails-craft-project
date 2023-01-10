@@ -1,16 +1,33 @@
 <div class="container">
   <p style="color: green"><%= notice %></p>
-
-  <h1>Metallics</h1>
-
-  <div id="metallics">
-    <% @metallics.each do |metallic| %>
-      <%= render metallic %>
-      <p>
-        <%= link_to "Show this metallic", metallic %>
-      </p>
-    <% end %>
-  </div>
-
+  
+  <h6 class="display-6 mt-5 mb-3 text-align-center"> My Metallics</h6>
+  <div class="float-end"><%= link_to "Add Metallic", new_metallic_path, class: "btn btn-secondary" %> </div>
+  <%# <div class="row text-center align-items-center"> %>
+  <% @metallics.each do |metallic| %>
+    <div class="card-deck">
+      <div id="metallics" class="card mb-5 text-center" style="width: 15rem;">
+        <%# <%= render pattern %> 
+        <%= image_tag metallic.image, class: "card-img-top" %>
+        <div class="card-body">
+          <h5 class="card-title">  <%= "#{metallic.brand} #{metallic.number}"%></h5>
+          <%# <p class="card-text"><%= metallic.brand %></p> 
+          <%# <p class="card-text"><%= metallic.pattern %></p> 
+          <%# <p class="card-text">  <%= " In my stash?:  #{pattern.stash}" %></p> 
+        </div>
+        <p>
+          <%= link_to "Show this metallic", metallic, class: "btn btn-secondary" %>
+        </p>
+      </div> 
+    </div>
+  <% end %>
   <%= link_to "New metallic", new_metallic_path %>
 </div>
+  <%# <div id="metallics">
+    <% @metallics.each do |metallic| %>
+      <%# <%= render metallic %> 
+      <%# <p> %>
+        <%# <%= link_to "Show this metallic", metallic %> 
+      <%# </p> %>
+    <%# <% end %> 
+  <%# </div>  %>

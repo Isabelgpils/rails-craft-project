@@ -1,10 +1,26 @@
 <p style="color: green"><%= notice %></p>
+<div class="container">
+  <%# <%= render @pattern %>
+  <div class="card mb-3" style="max-width: 900px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <%= image_tag @pattern.image, class: "card-img" %>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= @pattern.name%></h5>
+        <p class="card-text"><%= "#{@pattern.brand} #{@pattern.number}"%></p>
+        <p class="card-text"><small class="text-muted"> <%= " In my stash?:  #{@pattern.stash}" %></small></p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= render @pattern %>
-<%= image_tag @pattern.image %>
-<div>
-  <%= link_to "Edit this pattern", edit_pattern_path(@pattern) %> |
-  <%= link_to "Back to patterns", patterns_path %>
 
-  <%= button_to "Destroy this pattern", @pattern, method: :delete %>
+  <div>
+    <%= link_to "Edit this pattern", edit_pattern_path(@pattern) %> |
+    <%= link_to "Back to patterns", patterns_path %>
+
+    <%= button_to "Destroy this pattern", @pattern, method: :delete %>
+  </div>
 </div>

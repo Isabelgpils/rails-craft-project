@@ -66,6 +66,6 @@ class PatternsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pattern_params
-      params.require(:pattern).permit( :brand, :number, :image, :stash)
+      params.require(:pattern).permit( :brand, :name, :number, :image, :stash)
     end
 end
