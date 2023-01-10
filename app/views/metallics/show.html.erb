@@ -1,8 +1,21 @@
 <div class="container">
   <p style="color: green"><%= notice %></p>
-
-  <%= render @metallic %>
-  <%= image_tag @metallic.image %>
+    <%# <%= render @pattern %>
+  <div class="card mb-3" style="max-width: 800px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <%= image_tag @metallic.image, class: "card-img", style:"width: 300px;" %>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= @metallic.color%></h5>
+          <p class="card-text"><%= "#{@metallic.brand} #{@metallic.number}"%></p>
+          <p class="card-text"><%= "Patterns: #{@metallic.pattern}"%></p>
+          <p class="card-text"><small class="text-muted"> <%= " In my stash?:  #{@metallic.stash}" %></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div>
     <%= link_to "Edit this metallic", edit_metallic_path(@metallic) %> |
     <%= link_to "Back to metallics", metallics_path %>

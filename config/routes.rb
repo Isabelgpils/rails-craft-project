@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  get 'users/profile'
   devise_for :users, controllers:{
     sessions: "users/sessions",
     registrations: "users/registrations"
   }
+
+  get '/u/:id', to: 'users#profile', as: 'user'
+
   resources :patterns
   resources :dmcs
   resources :beads
@@ -10,7 +14,7 @@ Rails.application.routes.draw do
   resources :silks
   resources :dmcs
   
-  # get '/patterns', to: 'pages#patterns,'
+  get '/edit', to: 'users/registrations#edit'
   # get '/silks', to: 'pages#silks,'
   # get '/dmc,', to: 'pages#dmc'
   # get '/metallics', to: 'pages#metallics'
