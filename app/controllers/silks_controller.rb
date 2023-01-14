@@ -57,6 +57,9 @@ class SilksController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def set gloriana
+    @gloriana = @silks.where(brand: "Gloriana")
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -66,6 +69,6 @@ class SilksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def silk_params
-      params.require(:silk).permit(:brand, :type, :number, :color, :pattern, :image, :stash)
+      params.require(:silk).permit(:brand, :thread_type, :number, :color, :pattern, :image, :stash)
     end
 end

@@ -15,9 +15,9 @@ class PatternsTest < ApplicationSystemTestCase
     click_on "New pattern"
 
     fill_in "Brand", with: @pattern.brand
-    fill_in "Image", with: @pattern.image
     fill_in "Number", with: @pattern.number
-    fill_in "Stash", with: @pattern.stash
+    fill_in "Pattern name", with: @pattern.pattern_name
+    fill_in "Size", with: @pattern.size
     click_on "Create Pattern"
 
     assert_text "Pattern was successfully created"
@@ -29,9 +29,9 @@ class PatternsTest < ApplicationSystemTestCase
     click_on "Edit this pattern", match: :first
 
     fill_in "Brand", with: @pattern.brand
-    fill_in "Image", with: @pattern.image
     fill_in "Number", with: @pattern.number
-    fill_in "Stash", with: @pattern.stash
+    fill_in "Pattern name", with: @pattern.pattern_name
+    fill_in "Size", with: @pattern.size
     click_on "Update Pattern"
 
     assert_text "Pattern was successfully updated"

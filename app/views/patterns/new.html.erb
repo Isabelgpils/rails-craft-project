@@ -1,11 +1,11 @@
 <div class="container">
-  <h1>New pattern</h1>
+  <h1 class="mt-5">Add New Pattern</h1>
 
   <%= render "form", pattern: @pattern %>
 
   <br>
 
   <div>
-    <%= link_to "Back to patterns", patterns_path %>
+    <%= link_to "Back to patterns", patterns_path, class: "btn btn-secondary" %>
   </div>
 </div>

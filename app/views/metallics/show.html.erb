@@ -1,25 +1,26 @@
-<div class="container">
+<div class="container mt-5 pt-5"> 
   <p style="color: green"><%= notice %></p>
-    <%# <%= render @pattern %>
-  <div class="card mb-3" style="max-width: 800px;">
+  <div class="card mb-3" style="max-width: 900px;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <%= image_tag @metallic.image, class: "card-img", style:"width: 300px;" %>
+        <% if @metallic.image.present?%>
+          <%= image_tag @metallic.image, class: "card-img" %>
+        <% end %>
+        <%# <%= image_tag @metallic.image, class: "card-img" %> 
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"><%= @metallic.color%></h5>
-          <p class="card-text"><%= "#{@metallic.brand} #{@metallic.number}"%></p>
-          <p class="card-text"><%= "Patterns: #{@metallic.pattern}"%></p>
-          <p class="card-text"><small class="text-muted"> <%= " In my stash?:  #{@metallic.stash}" %></small></p>
-        </div>
+          <h5 class="card-text"><%= "#{@metallic.thread_type} #{@metallic.number}"%></p> 
+          <h6 class="card-title"><%= "Color: #{@metallic.color}"%></h5>
+          <p class="card-title"><%= "Thread Type: #{@metallic.brand}"%>
+          <%# <p class="card-title"><%= "Patterns: #{@metallic.patterns}"%></p> 
+          <div class="pb-5">
+            <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-outline-secondary float-start" %>
+            <%= button_to "Delete Metallic", @metallic, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
+          </div>
       </div>
     </div>
   </div>
-  <div>
-    <%= link_to "Edit this metallic", edit_metallic_path(@metallic) %> |
-    <%= link_to "Back to metallics", metallics_path %>
-
-    <%= button_to "Destroy this metallic", @metallic, method: :delete %>
-  </div>
 </div>
+<%= link_to "Back to Metallics", metallics_path, class: "btn btn-secondary" %>
+

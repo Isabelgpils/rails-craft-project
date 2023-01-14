@@ -1,10 +1,13 @@
-<h1>Editing silk</h1>
+<div class= "container">
+  <h1 class="mt-5">Edit silk</h1>
 
-<%= render "form", silk: @silk %>
+  <%= render "form", silk: @silk %>
 
 <br>
 
-<div>
-  <%= link_to "Show this silk", @silk %> |
-  <%= link_to "Back to silks", silks_path %>
+  <div>
+    <%= link_to "Show this silk", @silk, class: "btn btn-outline-secondary" %> 
+    <%= link_to "Back to silks", silks_path, class: "btn btn-secondary"%>
+  </div>
+
 </div>
