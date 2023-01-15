@@ -1,11 +1,11 @@
-<div class="container">
-  <h1>New bead</h1>
+<div class="container pt-5 ">
+  <h1 class="mt-5">Add New Bead</h1>
 
   <%= render "form", bead: @bead %>
 
   <br>
 
   <div>
-    <%= link_to "Back to beads", beads_path %>
+    <%= link_to "Back to beads", beads_path, class: "btn btn-secondary" %>
   </div>
 </div>

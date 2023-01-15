@@ -1,12 +1,26 @@
-<div class="container">
+<div class="container pt-5">
   <p style="color: green"><%= notice %></p>
-
-  <%= render @bead %>
-  <%= image_tag @bead.image %>
-  <div>
-    <%= link_to "Edit this bead", edit_bead_path(@bead) %> |
-    <%= link_to "Back to beads", beads_path %>
-
-    <%= button_to "Destroy this bead", @bead, method: :delete %>
+  <div class="card mb-3 mt-5" style="max-width: 900px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <% if @bead.image.present?%>
+          <%= image_tag @bead.image, class: "card-img p-3" %>
+        <% else %>
+          <h6> No Image Uploaded </h6>
+        <% end %> 
+      </div> 
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= "Delica #{@bead.number}" %></h5>
+          <p class="card-text"><%=  @bead.color %></p>
+          <p class="card-text"><%=  @bead.pattern %></p>
+          <p>
+            <%= link_to "Edit Bead", edit_bead_path(@bead), class: "btn btn-outline-secondary float-start"%>
+            <%= button_to "Delete Bead", @bead, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <%= link_to "Back to Beads", beads_path, class: "btn btn-secondary" %>
 </div>

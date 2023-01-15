@@ -2,12 +2,12 @@
 
 one:
   brand: MyString
+  pattern_name: MyString
   number: MyString
-  image: MyString
-  stash: MyString
+  size: MyString
 
 two:
   brand: MyString
+  pattern_name: MyString
   number: MyString
-  image: MyString
-  stash: MyString
+  size: MyString

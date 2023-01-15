@@ -1,26 +1,23 @@
-<p style="color: green"><%= notice %></p>
-<div class="container">
-  <%# <%= render @pattern %>
-  <div class="card mb-3" style="max-width: 900px;">
+<div class="container mt-5 pt-5">
+  <p style="color: green"><%= notice %></p>
+  <div class="card mb-3" style="max-width: 1200px;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <%= image_tag @pattern.image, class: "card-img" %>
+      <% if @pattern.image.present?%>
+        <%= image_tag @pattern.image, class: "card-img p-3" %>
+      <% end %>
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title"><%= @pattern.name%></h5>
+        <h5 class="card-title"><%= @pattern.pattern_name%></h5>
         <p class="card-text"><%= "#{@pattern.brand} #{@pattern.number}"%></p>
-        <p class="card-text"><small class="text-muted"> <%= " In my stash?:  #{@pattern.stash}" %></small></p>
+        <p class="card-text"><%= "Size: #{@pattern.size}"%></p>
+        <div style="display: inline;">
+            <%= link_to "Edit Silk", edit_pattern_path(@pattern), class: "btn btn-outline-secondary float-start" %>
+            <%= button_to "Delete Silk", @pattern , method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
+          </div>
       </div>
     </div>
   </div>
 </div>
-
-
-  <div>
-    <%= link_to "Edit this pattern", edit_pattern_path(@pattern) %> |
-    <%= link_to "Back to patterns", patterns_path %>
-
-    <%= button_to "Destroy this pattern", @pattern, method: :delete %>
-  </div>
-</div>
+<%= link_to "Back to patterns", patterns_path, class: "btn btn-secondary" %>

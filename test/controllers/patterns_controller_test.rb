@@ -17,7 +17,7 @@ class PatternsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create pattern" do
     assert_difference("Pattern.count") do
-      post patterns_url, params: { pattern: { brand: @pattern.brand, image: @pattern.image, number: @pattern.number, stash: @pattern.stash } }
+      post patterns_url, params: { pattern: { brand: @pattern.brand, number: @pattern.number, pattern_name: @pattern.pattern_name, size: @pattern.size } }
     end
 
     assert_redirected_to pattern_url(Pattern.last)
@@ -34,7 +34,7 @@ class PatternsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update pattern" do
-    patch pattern_url(@pattern), params: { pattern: { brand: @pattern.brand, image: @pattern.image, number: @pattern.number, stash: @pattern.stash } }
+    patch pattern_url(@pattern), params: { pattern: { brand: @pattern.brand, number: @pattern.number, pattern_name: @pattern.pattern_name, size: @pattern.size } }
     assert_redirected_to pattern_url(@pattern)
   end
 

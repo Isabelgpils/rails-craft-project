@@ -1,12 +1,13 @@
-<div class="container"> 
-  <h1>Editing pattern</h1>
+<div class= "container pt-5">
+  <h1 class="mt-5">Edit Pattern</h1>
 
   <%= render "form", pattern: @pattern %>
 
-  <br>
+<br>
 
   <div>
-    <%= link_to "Show this pattern", @pattern %> |
-    <%= link_to "Back to patterns", patterns_path %>
+    <%= link_to "Show this silk", @pattern, class: "btn btn-outline-secondary mt-3" %> 
+    <%= link_to "Back to silks", patterns_path, class: "btn btn-secondary mt-3"%>
   </div>
+
 </div>

@@ -1,13 +1,26 @@
- <div class="container"> 
+<div class="container mt-5 pt-5"> 
   <p style="color: green"><%= notice %></p>
-
-  <%= render @silk %>
-    <%= image_tag @silk.image %>
-
-  <div>
-    <%= link_to "Edit this silk", edit_silk_path(@silk) %> |
-    <%= link_to "Back to silks", silks_path %>
-
-    <%= button_to "Destroy this silk", @silk, method: :delete %>
+  <div class="card mb-3" style="max-width: 1500px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <% if @silk.image.present?%>
+          <%= image_tag @silk.image, class: "card-img p-3" %>
+        <% else%>
+          <p class="mt-5 mx-5" > No Image Available</p>
+        <% end %>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-text"><%= "#{@silk.brand} #{@silk.number}"%></p> 
+          <h6 class="card-title"><%= "Color: #{@silk.color}"%></h5>
+          <p class="card-title"><%= "Thread Type: #{@silk.thread_type}"%>
+          <p class="card-title"><%= "Patterns: #{@silk.pattern}"%></p> 
+          <div class= "pt-3 pb-5">
+            <%= link_to "Edit Silk", edit_silk_path(@silk), class: "btn btn-outline-secondary float-start" %>
+            <%= button_to "Delete Silk", @silk, method: :delete, class: "btn btn-outline-danger ms-3 float-start " %> 
+          </div>
+      </div>
+    </div>
   </div>
 </div>
+<%= link_to "Back to Silks", silks_path, class: "btn btn-secondary" %>

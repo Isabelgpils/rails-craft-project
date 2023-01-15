@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_10_190950) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_14_212731) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -71,10 +71,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_190950) do
 
   create_table "metallics", force: :cascade do |t|
     t.string "brand"
-    t.string "type"
+    t.string "thread_type"
     t.string "number"
     t.string "color"
-    t.string "pattern"
     t.string "image"
     t.string "stash"
     t.datetime "created_at", null: false
@@ -83,19 +82,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_190950) do
 
   create_table "patterns", force: :cascade do |t|
     t.string "brand"
+    t.string "pattern_name"
     t.string "number"
-    t.string "image"
-    t.string "stash"
+    t.string "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
-    t.string "name"
-    t.index ["user_id"], name: "index_patterns_on_user_id"
+    t.string "image"
   end
 
   create_table "silks", force: :cascade do |t|
     t.string "brand"
-    t.string "type"
+    t.string "thread_type"
     t.string "number"
     t.string "color"
     t.string "pattern"
@@ -120,5 +117,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_190950) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "patterns", "users"
 end

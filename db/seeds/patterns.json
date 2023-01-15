@@ -1,0 +1,90 @@
+[
+    {
+        "brand": "Chatelaine", "number": "107", "size": "232 x 232", "pattern_name": "Hydrangea Autumn Fog Mandala",
+         "stash": true, "finished": true
+    },
+    {
+        "brand": "Chatelaine", "number": "16", "size": "330 x 330", "pattern_name": "The French Farmhouse Potager Mandala", 
+        "stash":true , "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "101", "size": "159 x 159", "pattern_name": "Hortus Viridarium Mandala", 
+        "stash": true , "finished": true
+    },
+    {
+        "brand": "Chatelaine", "number": "72", "size": "333 x 333", "pattern_name": "The Herbularius Garden Mandala",
+        "stash": true , "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "116", "size": "129 x 129", "pattern_name": "Beaded Dragonfly Tile", 
+        "stash": true, "finished": true
+    },
+    {
+        "brand": "Chatelaine", "number": "117", "size": "129 x 129", "pattern_name": "The Beaded Hummingbird Tile",
+        "stash": true, "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "203", "size": "119 x 119", "pattern_name": "Little Tuscany Mandala", 
+         "stash": true , "finished": true
+    },
+    {
+        "brand": "Chatelaine", "number": "22", "size": "237 x 237", "pattern_name": "Watergarden",
+         "stash": true, "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "137", "size": "369 x 369 ", "pattern_name": "Seville Alcazar Garden Mandala", 
+        "stash": true, "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "212", "size": "175 x 175", "pattern_name": "Gothic Arch",
+        "stash": true, "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "128", "size": "129 x 129","pattern_name": "Beaded Peacock Tile",
+        "stash": true , "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "52", "size": "293 x 293", "pattern_name": "The Persian Iris Garden Mandala", 
+        "stash": true, "finished": false
+    },
+    {
+        "brand": "Chatelaine", "number": "69", "size": "265 x 205 ", "pattern_name": "The Hanging Gardens of Semiramis", 
+        "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "155", "size": "310 x 310", "pattern_name":"The Tinctorium Mandala", 
+        "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "123", "size": "325 x 325", "pattern_name": "Japanese Zen Moss Garden Mandala", 
+        "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "144", "size": "375 x 375", "pattern_name": "The Old World Vinery Mandala",
+        "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "157", "size": "354 x 354", "pattern_name": "The Rainforest Mandala",
+        "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "32", "size": "352 x352", "pattern_name": "The Fairy Flowergarden Mandala'",
+       "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "94", "size": "317 x 208", "pattern_name": "The Arabian Walled Garden'",
+       "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "122", "size": "283 x 283",  "pattern_name": "Sparkling Peacock Mandala",
+      "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "100", "size": "367 x 367",  "pattern_name": "The Rainforest Quilt", 
+        "stash": true , "finished": false 
+    },
+    {
+        "brand": "Chatelaine", "number": "193", "size": "93 x 93", "pattern_name": "Mini Tudor Mandala Garden 2",
+        "stash": true , "finished": true
+    }
+]
