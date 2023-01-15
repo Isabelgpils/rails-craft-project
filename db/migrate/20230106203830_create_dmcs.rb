@@ -1,11 +1,11 @@
 class CreateDmcs < ActiveRecord::Migration[7.0]
   def change
     create_table :dmcs do |t|
-      t.string :number
-      t.string :color
-      t.string :rgb_value
-      t.string :image
-      t.string :stash
+      t.text :number
+      t.text :color
+      t.text :rgb_value
+      t.text :image
+      t.text :stash
 
       t.timestamps
     end
