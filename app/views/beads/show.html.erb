@@ -1,11 +1,10 @@
-<div class="container mt-5 pt-5">
+<div class="container pt-5">
   <p style="color: green"><%= notice %></p>
-  <%# <%= render @pattern %>
-  <div class="card mb-3" style="max-width: 900px;">
+  <div class="card mb-3 mt-5" style="max-width: 900px;">
     <div class="row no-gutters">
       <div class="col-md-4">
         <% if @bead.image.present?%>
-          <%= image_tag @bead.image, class: "card-img" %>
+          <%= image_tag @bead.image, class: "card-img p-3" %>
         <% else %>
           <h6> No Image Uploaded </h6>
         <% end %> 
@@ -25,4 +24,3 @@
   </div>
   <%= link_to "Back to Beads", beads_path, class: "btn btn-secondary" %>
 </div>
-

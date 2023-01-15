@@ -4,16 +4,14 @@
     <div class="row no-gutters">
       <div class="col-md-4">
         <% if @metallic.image.present?%>
-          <%= image_tag @metallic.image, class: "card-img" %>
+          <%= image_tag @metallic.image, class: "card-img p-3" %>
         <% end %>
-        <%# <%= image_tag @metallic.image, class: "card-img" %> 
       </div>
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-text"><%= "#{@metallic.thread_type} #{@metallic.number}"%></p> 
           <h6 class="card-title"><%= "Color: #{@metallic.color}"%></h5>
-          <p class="card-title"><%= "Thread Type: #{@metallic.brand}"%>
-          <%# <p class="card-title"><%= "Patterns: #{@metallic.patterns}"%></p> 
+          <p class="card-title"><%= "Thread Type: #{@metallic.brand}"%></p> 
           <div class="pb-5">
             <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-outline-secondary float-start" %>
             <%= button_to "Delete Metallic", @metallic, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
@@ -23,4 +21,3 @@
   </div>
 </div>
 <%= link_to "Back to Metallics", metallics_path, class: "btn btn-secondary" %>
-

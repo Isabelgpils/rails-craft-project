@@ -3,7 +3,6 @@
     <% if metallic.errors.any? %>
       <div style="color: red">
         <h2><%= pluralize(metallic.errors.count, "error") %> prohibited this metallic from being saved:</h2>
-
         <ul>
           <% metallic.errors.each do |error| %>
             <li><%= error.full_message %></li>
