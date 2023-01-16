@@ -1,13 +1,13 @@
 class CreateSilks < ActiveRecord::Migration[7.0]
   def change
     create_table :silks do |t|
-      t.text :brand
-      t.text :type
-      t.text :number
-      t.text :color
-      t.text :pattern
-      t.text :image
-      t.text :stash
+      t.string :brand
+      t.string :type
+      t.string :number
+      t.string :color
+      t.string :pattern
+      t.string :image
+      t.string :stash
 
       t.timestamps
     end
