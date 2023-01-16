@@ -17,19 +17,32 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  # port: 5432
+  # username: 
+  # password: 
+
+
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: rails-craft-project_development
+  adapter: postgresql
+  encoding: unicode
+  database: stitch-app
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # username: isabel
+  password:
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: myapp
+  #username: stitch_app
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +70,13 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails-craft-project_test
+  adapter: postgresql
+  encoding: unicode
+  database: stitch-app_test
+  pool: 5
+  # username: 
+  # password:
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +100,7 @@ test:
 #
 production:
   <<: *default
-  database: rails-craft-project_production
-  username: isabelgpils@gmail.com
-  password: <%= ENV["STITCH-APP_DATABASE_PASSWORD"] %>
+  database: stitch-app_prod
+  # username: stitch_user
+  password: <%= ENV["RAILS_CRAFT_PROJECT_DATABASE_PASSWORD"] %>
+
