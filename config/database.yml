@@ -4,6 +4,7 @@
 
 default: &default
   adapter: postgresql
+
   encoding: unicode
   username: <%= ENV['POSTGRES_USER'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
@@ -18,10 +19,7 @@ default: &default
 
 development:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  database: rails-craft-project_dev
-  database: stitch-app
+  database: stitch-app_dev
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['POSTGRES_USER'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
@@ -59,9 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  database: rails-craft-project_test
+  database: stitch-app_test
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['POSTGRES_USER'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
@@ -88,7 +84,8 @@ test:
 #
 production:
   <<: *default
-  database: rails-craft-project_prod
+  database: stitch-app_prod
+  adapter: postresql
   url:  <%= ENV["DATABASE_URL"] %>
   pool: <%= ENV["DB_POOL"] || ENV['RAILS_MAX_THREADS'] || 5 %>
   username: <%= ENV['POSTGRES_USER'] %>
