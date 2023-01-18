@@ -8,6 +8,8 @@
 
 
 User.create(email: "test@email.com", password: "password", password_confirmation: "password")
+
+Silk.destroy.all
 text_from_json = File.read("#{Rails.root.to_s}/db/seeds/caron.json")
 JSON.parse(text_from_json).each do |t|
   Silk.create! ([{brand: t['brand'], thread_type: t["thread_type"], number: t['number'], color: t['color'] }] )
