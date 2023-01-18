@@ -7,9 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-User.create(email: "isabelgpils@gmail.com", password: "password", password_confirmation: "password")
-
-text_from_json = File.read("/Users/isabelgutierrez-pils/code/stitch-app/db/seeds/caron.json")
+User.create(email: "test@email.com", password: "password", password_confirmation: "password")
+text_from_json = File.read("#{Rails.root.to_s}/db/seeds/caron.json")
 JSON.parse(text_from_json).each do |t|
   Silk.create! ([{brand: t['brand'], thread_type: t["thread_type"], number: t['number'], color: t['color'] }] )
 end
