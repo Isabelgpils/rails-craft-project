@@ -1,7 +1,9 @@
 <div class="container pt-5">
   <p style="color: green"><%= notice %></p>
   <h6 class="display-6 pt-5 mt-5 mb-3 text-align-center"> Metallic Threads <%= link_to "Add New Metallic", new_metallic_path, class: "btn btn-outline-secondary ms-5" %> </h6>
-  <% @metallics.each do |metallic| %>
+
+
+  <% @metallics.sort_by{|metallic| [metallic.thread_type, metallic.number]}.each do |metallic| %>
     <div class="card-deck">
       <div id="metallics" class="card mb-5 text-center" style="width: 15rem;">
         <% if metallic.image.present? %>
