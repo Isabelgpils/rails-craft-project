@@ -65,6 +65,6 @@ class MetallicsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def metallic_params
-      params.require(:metallic).permit(:brand, :thread_type, :number, :color, :patterns, :image, :stash)
+      params.require(:metallic).permit(:brand, :thread_type, :number, :color, :pattern, :image, :stash)
     end
 end
