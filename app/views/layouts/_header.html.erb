@@ -1,4 +1,4 @@
-<nav class="nav navbar fixed-top navbar-expand-lg mb-5 ">
+<nav class="nav navbar fixed-top navbar-expand-lg mb-5 p-3" style="background-color:#431c5d;"  >
   <div class="container">
     <a class="navbar-brand" href="#">Stiching Organizer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,31 +9,20 @@
         <li class="nav-item">
           <%= link_to "Home", root_path, class: "nav-link" %>
         </li>
+        <li>
+          <%= link_to "Patterns", patterns_path, class: "nav-link" %>
+        </li>
         <li class="nav-item">
           <%= link_to "DMC", dmcs_path, class: "nav-link" %>
         </li>
-
         <li class="nav-item">
-          <%= link_to "Silks", silks_path, class: "nav-link" %>
-        </li>
-                <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Materials
-          </a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "Silks", silks_path, class: "nav-link" %>Silks</li>
-            <li><%= link_to "Beads", beads_path, class: "nav-link" %>Beads</li>
-            <li><%= link_to "Metallics", metallics_path, class: "nav-link" %>Metallics</a></li>
-          </ul>
-        </li>   
+          <%= link_to "Silks", silks_path, class: "nav-link" %> 
+        </li> 
         <li class="nav-item">
           <%= link_to "Beads", beads_path, class: "nav-link" %>
         </li>          
         <li class="nav-item">
           <%= link_to "Metallics", metallics_path, class: "nav-link" %>
-        </li>
-        <li>
-          <%= link_to "Patterns", patterns_path, class: "nav-link" %>
         </li>
         <li class="ps-5, ms-5">    
           <%= render "user/session_manager"%>
