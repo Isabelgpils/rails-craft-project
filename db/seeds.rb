@@ -21,5 +21,5 @@ end
 
 text_from_json = File.read("#{Rails.root.to_s}/db/seeds/patterns.json")
 JSON.parse(text_from_json).each do |t|
-  Pattern.create! ([{brand: t['brand'], pattern_name: t['pattern_name'], number: t['number'], size: t[size], stash: t['stash'], finished: t['finished'] }] )
+  Pattern.create! ([{brand: t['brand'], pattern_name: t['pattern_name'], number: t['number'], size: t['size'], stash: t['stash'], finished: t['finished'] }] )
 end
