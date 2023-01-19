@@ -12,6 +12,7 @@
           <h5 class="card-text"><%= "#{@metallic.thread_type} #{@metallic.number}"%></p> 
           <h6 class="card-title"><%= "Color: #{@metallic.color}"%></h5>
           <p class="card-title"><%= "Thread Type: #{@metallic.brand}"%></p> 
+          <p class="card-title"><%= "Thread Type: #{@metallic.pattern}"%></p>  
           <div class="pb-5">
             <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-outline-secondary float-start" %>
             <%= button_to "Delete Metallic", @metallic, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
