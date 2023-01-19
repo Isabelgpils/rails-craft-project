@@ -2,21 +2,15 @@
   <p style="color: green"><%= notice %></p>
   <h6 class="display-6 mt-5 pt-5 mb-3 text-align-center"> Patterns   <%= link_to "Add New Pattern", new_pattern_path, class: "btn btn-outline-secondary ms-5" %> </h6>
 
-  <div id="patterns">
-  <%# <div class="row text-center align-items-center"> %>
-  <% @patterns.each do |pattern| %>
+  <% @patterns.sort_by{|pattern| [pattern.brand, pattern.number]}.each do |pattern| %>
     <div class="card-deck mt-5">
-      <div id="beads" class="card mb-5 text-center" style="width: 18rem;">
-        <%# <%= render pattern %> 
+      <div id="patterns" class="card mb-5 text-center" style="width: 18rem;">
         <% if pattern.image.present? %>
-          <%= image_tag pattern.image, class: "card-img" %>
-        <% else %>
-          <h6> No Image Uploaded </h6>
+          <%= image_tag pattern.image, class: "card-img mb-3" %>
         <% end %> 
         <div class="card-body">
           <h5 class="card-title"><%= "#{pattern.brand} #{pattern.number}"%></h5>
           <p class="card-text"><%= pattern.pattern_name%></p>
-          <%# <p class="card-text">  <%= " In my stash?:  #{pattern.stash}" %></p> 
         </div>
         <p>
           <%= link_to "Show this pattern", pattern, class: "btn btn-outline-secondary" %>

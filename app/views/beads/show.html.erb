@@ -14,10 +14,10 @@
           <h5 class="card-title"><%= "Delica #{@bead.number}" %></h5>
           <p class="card-text"><%=  @bead.color %></p>
           <p class="card-text"><%=  @bead.pattern %></p>
-          <p>
+          <div class="mb-5">
             <%= link_to "Edit Bead", edit_bead_path(@bead), class: "btn btn-outline-secondary float-start"%>
             <%= button_to "Delete Bead", @bead, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
-          </p>
+          </div>
         </div>
       </div>
     </div>
