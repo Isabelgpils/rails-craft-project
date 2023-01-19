@@ -16,10 +16,10 @@ end
 
 text_from_json = File.read("#{Rails.root.to_s}/db/seeds/metallics.json")
 JSON.parse(text_from_json).each do |t|
-  Metallic.create! ([{brand: t['brand'], thread_type: t['thread_type'], number: t['number'], color: t['color'], patterns: t['pattern'], stash: t['stash'] }] )
+  Metallic.create! ([{brand: t['brand'], thread_type: t['thread_type'], number: t['number'], color: t['color'], pattern: t['pattern'], stash: t['stash'] }] )
 end
 
 text_from_json = File.read("#{Rails.root.to_s}/db/seeds/patterns.json")
 JSON.parse(text_from_json).each do |t|
-  Pattern.create! ([{brand: t['brand'], pattern_name: t['pattern_name'], number: t['number'], color: t['color'], patterns: t['patterns'], size: t[size], stash: t['stash'], finished: t['finished'] }] )
+  Pattern.create! ([{brand: t['brand'], pattern_name: t['pattern_name'], number: t['number'], size: t[size], stash: t['stash'], finished: t['finished'] }] )
 end
