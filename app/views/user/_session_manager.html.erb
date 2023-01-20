@@ -1,13 +1,13 @@
 <% if current_user %> 
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link float-end  me-md-2" style: "color: white;"%>
+        <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link float-end  me-md-2", style: "color: white;"%>
         <p class="ms-5 my-auto " style="color: white;"><%= current_user.email %></p>
         <%= button_to "Log Out", destroy_user_session_path, class: "btn btn-secondary float-end btn me-md-2 ", style: "background-color: #cdd422; color: #431c5d;", method: "delete" %> 
     </div>
 <% else %>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <%= link_to "Sign Up", new_user_registration_path, class: "nav-link float-end me-md-2" style: "color: #431c5d;"%>
-        <%= link_to "Log in", new_user_session_path, class: "nav-link float-end me-md-2" style: "color: #431c5d;"%> 
+        <%= link_to "Sign Up", new_user_registration_path, class: "nav-link float-end me-md-2", style: "color: #431c5d;"%>
+        <%= link_to "Log in", new_user_session_path, class: "nav-link float-end me-md-2", style: "color: #431c5d;"%> 
     </div>
 <% end %>
 
