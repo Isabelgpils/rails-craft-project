@@ -1,14 +1,14 @@
 <% if current_user %> 
     <li class="nav-item">
-        <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link float-end  me-md-2 "%>
+        <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link "%>
     </li>
-    <p class="ms-5 my-auto " style="color: white;"><%= current_user.email %></p>
+    <p><%= current_user.email %></p>
     <li class="nav-item">
-        <%= button_to "Log Out", destroy_user_session_path, class: "btn btn-secondary float-end btn me-md-2 ", style: "background-color: #cdd422; color: #431c5d;", method: "delete" %> 
+        <%= button_to "Log Out", destroy_user_session_path, class: "btn btn-secondary ", style: "background-color: #cdd422; color: #431c5d;", method: "delete" %> 
     </li>
 
 <% else %>
-    <li class="nav-item me-2">
+    <li class="nav-item">
         <%= link_to "Sign Up", new_user_registration_path, class: "nav-link"%>
     </li>
     <li class="nav-item">
