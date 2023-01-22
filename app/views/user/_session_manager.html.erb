@@ -1,7 +1,6 @@
 <% if current_user %> 
     <li class="nav-item">
-        <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link "%>
-        <p><%= current_user.email %></p>
+        <%= link_to "Edit Account: #{current_user.email}", edit_user_registration_path, class: "nav-link "%>
     </li>
 
     <li class="nav-item">
