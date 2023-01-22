@@ -1,10 +1,11 @@
 <% if current_user %> 
     <li class="nav-item">
         <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link "%>
+        <span><%= current_user.email %></span>
     </li>
-    <p><%= current_user.email %></p>
+
     <li class="nav-item">
-        <%= button_to "Log Out", destroy_user_session_path, class: "btn btn-secondary ", style: "background-color: #cdd422; color: #431c5d;", method: "delete" %> 
+        <%= button_to "Log Out", destroy_user_session_path, class: "btn btn-outline-info", method: "delete" %> 
     </li>
 
 <% else %>
