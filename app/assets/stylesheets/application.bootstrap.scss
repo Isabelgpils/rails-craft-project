@@ -1,7 +1,6 @@
 
 $nav-link-color: white !default;
-$nav-link-hover-color: teal !default;
 $navbar-light-brand-color: white !default;
-$navbar-nav-link-padding-x: 1rem;
 
 @import 'bootstrap/scss/bootstrap';  
+@import 'override_styling'

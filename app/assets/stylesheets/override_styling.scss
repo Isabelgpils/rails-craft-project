@@ -1,3 +1,57 @@
-.home{
-    background-color: blue;
+.navbar {
+    background-color: #026670;
 }
+
+.navbar-brand {
+   color: white;
+   padding-left: 1em;
+}
+
+.navbar-brand:hover {
+    color: aquamarine;
+}
+
+.nav-link{
+    color: white;
+    padding-left: 5px;
+
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: aquamarine;
+  }
+.navbar-toggler-icon {
+    background-color: whitesmoke;
+
+}
+.btn-info{
+    background-color: aquamarine;
+}
+@media (min-width: 992px) {
+    .nav-link-group{
+        margin-left: 1em;
+    }
+    .nav-login{
+        margin-left: 5em;
+    }
+
+}
+@media (min-width: 1200px) {
+    .nav-link-group{
+        margin-left: 1em;
+    }
+    .nav-login{
+        margin-left: 10em;
+    }
+
+}
+@media (min-width: 1400px) {
+    .nav-link-group{
+        margin-left: 5em;
+    }
+    .nav-login{
+        padding-left: 15em;
+    }
+
+}
+
