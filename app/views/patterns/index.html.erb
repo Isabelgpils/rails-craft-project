@@ -3,7 +3,7 @@
   <h6 class="display-6 mt-5 pt-5 mb-3 text-align-center"> Patterns   <%= link_to "Add New Pattern", new_pattern_path, class: "btn btn-outline-secondary ms-5" %> </h6>
   <div class="row align-items-start">
     <% @patterns.sort_by{|pattern| [pattern.brand, pattern.number]}.each do |pattern| %>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card-deck mt-5">
           <div id="patterns" class="card mb-5 text-center" style="width: 18rem;">
             <% if pattern.image.present? %>
