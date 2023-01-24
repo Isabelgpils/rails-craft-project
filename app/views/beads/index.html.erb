@@ -3,9 +3,9 @@
   <h6 class="display-6 mt-5 pt-5 mb-3 text-align-center"> Beads  <%= link_to "Add New Bead", new_bead_path, class: "btn btn-outline-secondary ms-5" %></h6>
   <div class="row align-items-start">
     <% @beads.sort_by{|bead| bead.number}.each do |bead| %>
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card-deck">
-          <div id="beads" class="card mb-5 text-center" style="width: 18rem;">
+          <div id="beads" class="card mb-5 text-center" style="width: 12rem;">
             <% if bead.image.present? %>
               <%= image_tag bead.image, class: "card-img" %>
             <% end %> 
