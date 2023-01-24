@@ -3,7 +3,7 @@
   <h6 class="display-6 mt-5 pt-5 mb-5 text-align-center"> DMC Threads <%= link_to "Add New DMC Thread", new_dmc_path, class: "btn btn-outline-secondary ms-5" %> </h6>
   <div class="row align-items-start">
     <% @dmcs.sort_by{|dmc| dmc.number}.each do |dmc| %>
-      <div class="col-lg-3 col-md-4 col-sm-12">
+      <div class="col-lg-2 col-md-4 col-sm-12">
         <div class="card-deck">
           <div id="dmcs" class="card mb-5 text-center" style="width: 12rem;">
             <% if dmc.image.present? %>
