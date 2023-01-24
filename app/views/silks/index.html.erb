@@ -4,7 +4,7 @@
     <%# <% @silks.sort_by{|silk| silk.number }.each do |silk| %> 
   <div class="row align-items-start">
     <% @silks.sort_by{|silk| [silk.brand, silk.number]}.each do |silk| %>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card-deck mt-5">
           <div id="silks" class="card mb-5 text-center" style="width: 18rem;">
             <% if silk.image.present? %>
