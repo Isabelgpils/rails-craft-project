@@ -24,8 +24,8 @@ User.create(email: "test@email.com", password: "password", password_confirmation
 # JSON.parse(text_from_json).each do |t|
 #   Bead.create! ([{number: t['number'], pattern: t['pattern']}] )
 # end
-DMC.destroy_all
+Dmc.destroy_all
 text_from_json = File.read("#{Rails.root.to_s}/db/seeds/dmc.json")
 JSON.parse(text_from_json).each do |t|
-  DMC.create! ([{number: t['number'], color: t['color'], rgba: t['rgba'],  stash: t['stash'] }] )
+  Dmc.create! ([{number: t['number'], color: t['color'], rgb_value: t['rgb_value'],  stash: t['stash'] }] )
 end
