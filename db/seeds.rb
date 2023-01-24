@@ -14,13 +14,18 @@ User.create(email: "test@email.com", password: "password", password_confirmation
 #   Silk.create! ([{brand: t['brand'], thread_type: t["thread_type"], number: t['number'], color: t['color'] }] )
 # end
 
-Metallic.destroy_all
-text_from_json = File.read("#{Rails.root.to_s}/db/seeds/metallics.json")
-JSON.parse(text_from_json).each do |t|
-  Metallic.create! ([{brand: t['brand'], thread_type: t['thread_type'], number: t['number'], color: t['color'], pattern: t['pattern'], stash: t['stash'] }] )
-end
+# Metallic.destroy_all
+# text_from_json = File.read("#{Rails.root.to_s}/db/seeds/metallics.json")
+# JSON.parse(text_from_json).each do |t|
+#   Metallic.create! ([{brand: t['brand'], thread_type: t['thread_type'], number: t['number'], color: t['color'], pattern: t['pattern'], stash: t['stash'] }] )
+# end
 
 # text_from_json = File.read("#{Rails.root.to_s}/db/seeds/beads.json")
 # JSON.parse(text_from_json).each do |t|
 #   Bead.create! ([{number: t['number'], pattern: t['pattern']}] )
 # end
+Dmc.destroy_all
+text_from_json = File.read("#{Rails.root.to_s}/db/seeds/dmc.json")
+JSON.parse(text_from_json).each do |t|
+  Dmc.create! ([{number: t['number'], color: t['color'], rgb_value: t['rgb_value'],  stash: t['stash'] }] )
+end

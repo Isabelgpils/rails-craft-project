@@ -1,0 +1,921 @@
+[
+	{
+		"number": 3713, "color": "Salmon Very Light", "rgb_value": [255, 226, 226],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3713_swatch_150x150.jpg"
+		},
+	{
+		"number": 761, "color": "Salmon Light", "rgb_value": [248, 180, 173],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_761_swatch_150x150.jpg"
+	},
+	{
+		"number": 760, "color": "Salmon", "rgb_value": [236, 136, 128],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_760_swatch_150x150.jpg"
+	},
+	{
+		"number": 3712, "color": "Salmon Medium", "rgb_value": [217, 93, 93],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3712_swatch_150x150.jpg"
+	},
+	{
+		"number": 3328, "color": "Salmon Dark", "rgb_value": [227, 109, 109],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3328_swatch_150x150.jpg"
+	},
+	{
+		"number": 347, "color": "Salmon Very Dark", "rgb_value": [191, 45, 45],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_347_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 353, "color": "Peach", "rgb_value": [248, 121, 82, 0.74],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_353_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 352, "color": "Coral Light", "rgb_value": [253, 156, 151],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_352_swatch_150x150.jpg"
+	},
+	{
+		"number": 351, "color": "Coral", "rgb_value": [222, 73, 50],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_351_swatch_150x150.jpg"
+	},
+	{
+		"number": 350, "color": "Coral Medium", "rgb_value": [184, 34, 14],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_350_swatch_150x150.jpg"
+	},
+	{
+		"number": 349, "color": "Coral Dark", "rgb_value": [222, 46, 48],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_349_swatch_150x150.jpg"
+	},
+	{
+		"number": 817, "color": "Coral Red Very Dark", "rgb_value": [144, 26, 24], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_817_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3708, "color": "Melon Light", "rgb_value": [255, 203, 213],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3708_swatch_150x150.jpg"
+	},
+	{
+		"number": 3706, "color": "Melon Medium", "rgb_value": [255, 173, 188],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3706_swatch_150x150.jpg"
+	},
+	{
+		"number": 3705, "color": "Melon Dark", "rgb_value": [255, 121, 146],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3705_swatch_150x150.jpg"
+	},
+	{
+		"number": 3801, "color": "Melon Very Dark", "rgb_value": [231, 73, 103],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3801_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 666, "color": "Bright Red", "rgb_value": [227, 29, 66], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_666_swatch_150x150.jpg"
+	},
+	{
+		"number": 321, "color": "Red", "rgb_value": [199, 43, 59], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_321_swatch_150x150.jpg"
+	},
+	{
+		"number": 304, "color": "Red Medium", "rgb_value": [183, 31, 51], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_304_swatch_150x150.jpg"
+	},
+	{
+		"number": 498, "color": "Red Dark", "rgb_value": [167, 19, 43], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_498_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 816, "color": "Garnet", "rgb_value": [151, 11, 35], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_816_swatch_150x150.jpg"
+	},
+	{
+		"number": 815, "color": "Garnet Medium", "rgb_value": [135, 7, 31], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_815_swatch_150x150.jpg"
+	},
+	{
+		"number": 814, "color": "Garnet Dark", "rgb_value": [123, 0, 27], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_814_swatch_150x150.jpg"
+	},
+	{
+		"number": 902, "color": "Garnet Very Dark", "rgb_value": [130, 38, 55], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_902_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 894, "color": "Carnation Very Light", "rgb_value": [255, 178, 187],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_894_swatch_150x150.jpg"
+	},
+	{
+		"number": 893, "color": "Carnation Light", "rgb_value": [252, 144, 162],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_893_swatch_150x150.jpg"
+	},
+	{
+		"number": 892, "color": "Carnation Medium", "rgb_value": [255, 121, 140],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_892_swatch_150x150.jpg"
+	},
+	{
+		"number": 891, "color": "Carnation Dark", "rgb_value": [255, 87, 115], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_891_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 818, "color": "Baby Pink", "rgb_value": [255, 223, 217],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_818_swatch_150x150.jpg"
+	},
+	{
+		"number": 819, "color": "Baby Pink Light", "rgb_value": [255, 238, 235],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_819_swatch_150x150.jpg"
+	},
+	{
+		"number": 776, "color": "Pink Medium", "rgb_value": [252, 176, 185],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_776_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 957, "color": "Geranium Pale", "rgb_value": [253, 181, 181],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_957_swatch_150x150.jpg"
+	},
+	{
+		"number": 956, "color": "Geranium", "rgb_value": [255, 145, 145],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_956_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3833, "color": "Raspberry Light", "rgb_value": [234, 134, 153],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3833_swatch_150x150.jpg"
+	},
+	{
+		"number": 3832, "color": "Raspberry Medium", "rgb_value": [219, 85, 110],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3832_swatch_150x150.jpg"
+	},
+	{
+		"number": 3831, "color": "Raspberry Dark", "rgb_value": [179, 47, 72], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3831_swatch_150x150.jpg"
+	},
+	{
+		"number": 777, "color": "Raspberry Very Dark", "rgb_value": [145, 53, 70], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_777_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3326, "color": "Rose Light", "rgb_value": [251, 173, 180],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3326_swatch_150x150.jpg"
+	},
+	{
+		"number": 309, "color": "Rose Dark", "rgb_value": [186, 32, 68],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_309_swatch_150x150.jpg"
+	},
+	{
+		"number": 899, "color": "Rose Medium", "rgb_value": [242, 118, 136],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_899_swatch_150x150.jpg"
+	},
+	{
+		"number": 335, "color": "Rose", "rgb_value": [238, 84, 110],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_335_swatch_150x150.jpg"
+	},
+	{
+		"number": 326, "color": "Rose Very Dark", "rgb_value": [179, 59, 75],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_326_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 150, "color": "Dusty Rose Ult Very Dark", "rgb_value": [171, 2, 73],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_150_swatch_150x150.jpg"
+	},
+	{
+		"number": 151, "color": "Dusty Rose Very Light", "rgb_value": [240, 206, 212],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_151_swatch_150x150.jpg"
+	},
+	{
+		"number": 3731, "color": "Dusty Rose Very Dark", "rgb_value": [218, 103, 131],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3731_swatch_150x150.jpg"
+	},
+	{
+		"number": 3733, "color": "Dusty Rose", "rgb_value": [232, 135, 155],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3733_swatch_150x150.jpg"
+	},
+	{
+		"number": 3350, "color": "Dusty Rose Ultra Dark", "rgb_value": [188, 67, 101],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3350_swatch_150x150.jpg"
+	},
+	{
+		"number": 3354, "color": "Dusty Rose Light", "rgb_value": [228, 166, 172],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3354_swatch_150x150.jpg"
+	},
+	{
+		"number": 3716, "color": "Dusty Rose Med Vy Lt", "rgb_value": [255, 189, 189],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3716_swatch_150x150.jpg"
+	},
+	{
+		"number": 961, "color": "Dusty Rose Dark", "rgb_value": [207, 115, 115], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_961_swatch_150x150.jpg"
+	},
+	{
+		"number": 962, "color": "Dusty Rose Medium", "rgb_value": [230, 138, 138],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_962_swatch_150x150.jpg"
+	},
+	{
+		"number": 963, "color": "Dusty Rose Ult Very Light", "rgb_value": [255, 215, 215],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_963_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3689, "color": "Mauve Light", "rgb_value": [251, 191, 194],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3689_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3688, "color": "Mauve Medium", "rgb_value": [231, 169, 172],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3688_swatch_150x150.jpg"
+	},
+	{
+		"number": 3687, "color": "Mauve", "rgb_value": [201, 107, 112],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3687_swatch_150x150.jpg"
+	},
+	{
+		"number": 3803, "color": "Mauve Dark", "rgb_value": [171, 51, 87],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3803_swatch_150x150.jpg"
+	},
+	{
+		"number": 3685, "color": "Mauve Very Dark", "rgb_value": [136, 21, 49], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3685_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 605, "color": "Cranberry Very Light", "rgb_value": [255, 192, 205],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_605_swatch_150x150.jpg"
+	},
+	{
+		"number": 604, "color": "Cranberry Light", "rgb_value": [255, 176, 190],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_604_swatch_150x150.jpg"
+	},
+	{
+		"number": 603, "color": "Cranberry", "rgb_value": [228, 5, 72, 0.3],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_603_swatch_150x150.jpg"
+	},
+	{
+		"number": 602, "color": "Cranberry Medium", "rgb_value": [228, 5, 72, 0.5],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_602_swatch_150x150.jpg"
+	},
+	{
+		"number": 601, "color": "Cranberry Dark", "rgb_value": [228, 5, 72, 0.7],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_601_swatch_150x150.jpg"
+	},
+	{
+		"number": 600, "color": "Cranberry Very Dark", "rgb_value": [228, 5, 72, 0.9], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_600_swatch_150x150.jpg"
+	},
+	{
+		"number": 3806, "color": "Cyclamen Pink Light", "rgb_value": [255, 140, 174],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3806_swatch_150x150.jpg"
+	},
+	{
+		"number": 3805, "color": "Cyclamen Pink", "rgb_value": [243, 71, 139],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3805_swatch_150x150.jpg"
+	},
+	{
+		"number": 3804, "color": "Cyclamen Pink Dark", "rgb_value": [224, 40, 118],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3804_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3609, "color": "Plum Ultra Light", "rgb_value": [244, 174, 213],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3609_swatch_150x150.jpg"
+	},
+	{
+		"number": 3608, "color": "Plum Very Light", "rgb_value": [234, 156, 196],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3608_swatch_150x150.jpg"
+	},
+	{
+		"number": 3607, "color": "Plum Light", "rgb_value": [197, 73, 137],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3607_swatch_150x150.jpg"
+	},
+	{
+		"number": 718, "color": "Plum", "rgb_value": [156, 36, 98],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_718_swatch_150x150.jpg"
+	},
+	{
+		"number": 917, "color": "Plum Medium", "rgb_value": [155, 19, 89], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_917_swatch_150x150.jpg"
+	},
+	{
+		"number": 915, "color": "Plum Dark", "rgb_value": [130, 0, 67], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_915_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 225, "color": "Shell Pink Ultr Very Light", "rgb_value": [255, 223, 213],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_225_swatch_150x150.jpg"
+	},
+	{
+		"number": 224, "color": "Shell Pink Very Light", "rgb_value": [226, 160, 153, 0.5],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_224_swatch_150x150.jpg"
+	},
+	{
+		"number": 152, "color": "Shell Pink Medium Light", "rgb_value": [226, 160, 153],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_152_swatch_150x150.jpg"
+	},
+	{
+		"number": 223, "color": "Shell Pink Light", "rgb_value": [204, 132, 124],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_223_swatch_150x150.jpg"
+	},
+	{
+		"number": 3722, "color": "Shell Pink Med", "rgb_value": [188, 108, 100],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3722_swatch_150x150.jpg"
+	},
+	{
+		"number": 3721, "color": "Shell Pink Dark", "rgb_value": [161, 75, 81],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3721_swatch_150x150.jpg"
+	},
+	{
+		"number": 221, "color": "Shell Pink Very Dark", "rgb_value": [136, 62, 67],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_221_swatch_150x150.jpg"
+	},
+
+	{ "number": 778, "color": "Antique Mauve Very Light", "rgb_value": [223, 179, 187]},
+	{ "number": 3727, "color": "Antique Mauve Light", "rgb_value": [219, 169, 178]},
+	{ "number": 316, "color": "Antique Mauve Medium", "rgb_value": [183, 115, 127]},
+	{ "number": 3726, "color": "Antique Mauve Dark", "rgb_value": [155, 91, 102]},
+	{ "number": 315, "color": "Antique Mauve Medium Dark", "rgb_value": [129, 73, 82]},
+	{ "number": 3802, "color": "Antique Mauve Very Dark", "rgb_value": [113, 65, 73]},
+	{ "number": 3743, "color": "Antique Violet Very Light", "rgb_value": [215, 203, 211]},
+	{ "number": 3042, "color": "Antique Violet Light", "rgb_value": [183, 157, 167]},
+	{ "number": 3041, "color": "Antique Violet Medium", "rgb_value": [149, 111, 124]},
+	{ "number": 3740, "color": "Antique Violet Dark", "rgb_value": [120, 87, 98]},
+
+	{ "number": 3836, "color": "Grape Light", "rgb_value": [186, 145, 170]},
+	{ "number": 3835, "color": "Grape Medium", "rgb_value": [148, 96, 131]},
+	{ "number": 3834, "color": "Grape Dark", "rgb_value": [114, 55, 93]},
+	{ "number": 154, "color": "Grape Very Dark", "rgb_value": [87, 36, 51]},
+
+	{ "number": 211, "color": "Lavender Light", "rgb_value": [227, 203, 227]},
+	{ "number": 210, "color": "Lavender Medium", "rgb_value": [195, 159, 195]},
+	{ "number": 209, "color": "Lavender Dark", "rgb_value": [163, 123, 167]},
+	{ "number": 208, "color": "Lavender Very Dark", "rgb_value": [131, 91, 139]},
+	{ "number": 3837, "color": "Lavender Ultra Dark", "rgb_value": [108, 58, 110]},
+	{ "number": 3840, "color": "Lavender Blue Light", "rgb_value": [176, 192, 218]},
+	{ "number": 3839, "color": "Lavender Blue Med", "rgb_value": [123, 142, 171]},
+	{ "number": 3838, "color": "Lavender Blue Dark", "rgb_value": [92, 114, 148]},
+
+	{ "number": 327, "color": "Violet Dark", "rgb_value": [99, 54, 102]},
+	{ "number": 153, "color": "Violet Very Light", "rgb_value": [230, 204, 217]},
+	{ "number": 554, "color": "Violet Light", "rgb_value": [219, 179, 203]},
+	{ "number": 553, "color": "Violet", "rgb_value": [163, 99, 139]},
+	{ "number": 552, "color": "Violet Medium", "rgb_value": [128, 58, 107]},
+	{ "number": 550, "color": "Violet Very Dark", "rgb_value": [92, 24, 78]},
+
+	{ "number": 3747, "color": "Blue Violet Very Light", "rgb_value": [211, 215, 237]},
+	{ "number": 341, "color": "Blue Violet Light", "rgb_value": [183, 191, 221]},
+	{ "number": 156, "color": "Blue Violet Med Lightt", "rgb_value": [163, 174, 209]},
+	{ "number": 340, "color": "Blue Violet Medium", "rgb_value": [173, 167, 199]},
+	{ "number": 155, "color": "Blue Violet Med Dark", "rgb_value": [152, 145, 182]},
+	{ "number": 3746, "color": "Blue Violet Dark", "rgb_value": [119, 107, 152]},
+	{ "number": 333, "color": "Blue Violet Very Dark", "rgb_value": [92, 84, 120]},
+
+	{
+		"number": 157, "color": "Cornflower Blue Very Ligh", "rgb_value": [157, 175, 213, 0.7],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_157_swatch_150x150.jpg"
+	},
+	{
+		"number": 794, "color": "Cornflower Blue Light", "rgb_value": [172, 198, 232],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_794_swatch_150x150.jpg"
+	},
+	{
+		"number": 793, "color": "Cornflower Blue Medium", "rgb_value": [104, 117, 170],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_793_swatch_150x150.jpg"
+	},
+	{
+		"number": 3807, "color": "Cornflower Blue", "rgb_value": [73, 88, 141], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3807_swatch_150x150.jpg"
+	},
+	{
+		"number": 792, "color": "Cornflower Blue Dark", "rgb_value": [74, 75, 155], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_792_swatch_150x150.jpg"
+	},
+	{
+		"number": 158, "color": "Cornflower Blu Medium Very Dark", "rgb_value": [35, 43, 99], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_158_swatch_150x150.jpg"
+
+	},
+	{
+		"number": 791, "color": "Cornflower Blue Very Dark", "rgb_value": [25, 13, 83], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_791_swatch_150x150.jpg"
+	},
+	{
+		"number": 518, "color": "Wedgewood Light", "rgb_value": [56, 132, 166, 0.7],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_518_swatch_150x150.jpg"
+	},
+	{
+		"number": 517, "color": "Wedgewood Dark", "rgb_value": [55, 96, 135],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_517_swatch_150x150.jpg"
+	},
+	{
+		"number": 519, "color": "Sky Blue", "rgb_value": [190, 226, 241],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_519_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 800, "color": "Delft Blue Pale", "rgb_value": [192, 204, 222],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_800_swatch_150x150.jpg"
+	},
+	{
+		"number": 809, "color": "Delft Blue", "rgb_value": [148, 168, 198],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_809_swatch_150x150.jpg"
+	},
+	{
+		"number": 799, "color": "Delft Blue Medium", "rgb_value": [116, 142, 182],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_799_swatch_150x150.jpg"
+	},
+	{
+		"number": 798, "color": "Delft Blue Dark", "rgb_value": [70, 106, 142],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_798_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 797, "color": "Royal Blue", "rgb_value": [19, 71, 125], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_797_swatch_150x150.jpg"
+	},
+	{
+		"number": 796, "color": "Royal Blue Dark", "rgb_value": [17, 65, 109], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_796_swatch_150x150.jpg"
+	},
+	{
+		"number": 820, "color": "Royal Blue Very Dark", "rgb_value": [19, 16, 72], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_820_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 162, "color": "Blue Ultra Very Light", "rgb_value": [219, 236, 245],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_162_swatch_150x150.jpg"
+	},
+	{
+		"number": 827, "color": "Blue Very Light", "rgb_value": [189, 221, 237],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_827_swatch_150x150.jpg"
+	},
+	{
+		"number": 813, "color": "Blue Light", "rgb_value": [161, 194, 215],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_813_swatch_150x150.jpg"
+	},
+	{
+		"number": 826, "color": "Blue Medium", "rgb_value": [107, 158, 191],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_826_swatch_150x150.jpg"
+	},
+	{
+		"number": 825, "color": "Blue Dark", "rgb_value": [71, 129, 165], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_825_swatch_150x150.jpg"
+	},
+	{
+		"number": 824, "color": "Blue Very Dark", "rgb_value": [57, 105, 135], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_824_swatch_150x150.jpg"
+	},
+	{
+		"number": 3843, "color": "Electric Blue", "rgb_value": [20, 170, 208],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3843_swatch_150x150.jpg"
+	},
+	{
+		"number": 995, "color": "Electric Blue Dark", "rgb_value": [38, 150, 182], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_995_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3846, "color": "Turquoise Bright Light", "rgb_value": [6, 227, 230],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3846_swatch_150x150.jpg"
+	},
+	{
+		"number": 3845, "color": "Turquoise Bright Medium", "rgb_value": [4, 196, 202],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3845_swatch_150x150.jpg"
+	},
+	{
+		"number": 3844, "color": "Turquoise Bright Dark", "rgb_value": [0, 129, 149],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3844_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 928, "color": "Gray Green Very Light", "rgb_value": [221, 227, 227],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_928_swatch_150x150.jpg"
+	},
+	{
+		"number": 927, "color": "Gray Green Light", "rgb_value": [189, 203, 203],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_927_swatch_150x150.jpg"
+	},
+	{
+		"number": 926, "color": "Gray Green Medium", "rgb_value": [152, 174, 174],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_926_swatch_150x150.jpg"
+	},
+	{
+		"number": 3768, "color": "Gray Green Dark", "rgb_value": [101, 127, 127], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3768_swatch_150x150.jpg"
+	},
+	{
+		"number": 924, "color": "Gray Green Very Dark", "rgb_value": [86, 106, 106], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_924_swatch_150x150.jpg"
+	},
+	
+	{
+		"number": 3849, "color": "Teal Green Light", "rgb_value": [82, 179, 164],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3849_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3848, "color": "Teal Green Medium", "rgb_value": [85, 147, 146],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3848_swatch_150x150.jpg"
+	},
+	{
+		"number": 3847, "color": "Teal Green Dark", "rgb_value": [52, 125, 117], 
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3847_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 964, "color": "Sea Green Light", "rgb_value": [169, 226, 216],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_964_swatch_150x150.jpg"
+	},
+	{
+		"number": 959, "color": "Sea Green Medium", "rgb_value": [89, 199, 180],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_959_swatch_150x150.jpg"
+	},
+	{
+		"number": 958, "color": "Sea Green Dark", "rgb_value": [62, 182, 161],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_958_swatch_150x150.jpg"
+	},
+	{
+		"number": 3812, "color": "Sea Green Very Dark", "rgb_value": [47, 140, 132],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3812_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3851, "color": "Green Bright Light", "rgb_value": [73, 179, 161],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3851_swatch_150x150.jpg"
+	},
+	{
+		"number": 943, "color": "Green Bright Medium", "rgb_value": [61, 147, 132],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_943_swatch_150x150.jpg"
+	},
+	{
+		"number": 3850, "color": "Green Bright Dark", "rgb_value": [55, 132, 119],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3850_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 993, "color": "Aquamarine Very Light", "rgb_value": [144, 192, 180],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_993_swatch_150x150.jpg"
+	},
+	{
+		"number": 992, "color": "Aquamarine Ligh", "rgb_value": [111, 174, 159],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_992_swatch_150x150.jpg"
+	},
+	{
+		"number": 3814, "color": "Aquamarine", "rgb_value": [52, 132, 113],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3814_swatch_150x150.jpg"
+	},
+	{
+		"number": 991, "color": "Aquamarine Dark", "rgb_value": [71, 123, 110],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_991_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 966, "color": "Jade Ultra Very Light", "rgb_value": [185, 215, 192],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_966_swatch_150x150.jpg"
+	},
+	{
+		"number": 564, "color": "Jade Very Light", "rgb_value": [167, 205, 175],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_564_swatch_150x150.jpg"
+	},
+	{
+		"number": 563, "color": "Jade Light", "rgb_value": [143, 192, 152],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_563_swatch_150x150.jpg"
+	},
+	{
+		"number": 562, "color": "Jade Medium", "rgb_value": [83, 151, 106],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_562_swatch_150x150.jpg"
+	},
+	{
+		"number": 505, "color": "Jade Green", "rgb_value": [51, 131, 98],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_505_swatch_150x150.jpg"
+	},
+
+	{
+		"number": 3817, "color": "Celadon Green Light", "rgb_value": [153, 195, 170],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3817_swatch_150x150.jpg"
+	},
+	{
+		"number": 3816, "color": "Celadon Green", "rgb_value": [101, 165, 125],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3816_swatch_150x150.jpg"
+	},
+	{
+		"number": 163, "color": "Celadon Green Meium", "rgb_value": [77, 131, 97],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_163_swatch_150x150.jpg"
+	},
+	{
+		"number": 3815, "color": "Celadon Green Dark", "rgb_value": [71, 119, 89],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_3815_swatch_150x150.jpg"
+	},
+	{
+		"number": 561, "color": "Celadon Green Very Dark", "rgb_value": [44, 106, 69],
+		"image": "https://static1.dmc.com/cache/1/1/117mc_e_561_swatch_150x150.jpg"
+	},
+
+	{ "number": 3813, "color": "Blue Green Lt", "rgb_value": [178, 212, 189]},
+	{ "number": 503, "color": "Blue Green Med", "rgb_value": [123, 172, 148]},
+	{ "number": 502, "color": "Blue Green", "rgb_value": [91, 144, 113]},
+	{ "number": 501, "color": "Blue Green Dark", "rgb_value": [57, 111, 82]},
+	{ "number": 500, "color": "Blue Green Vy Dark", "rgb_value": [48, 68, 56]},
+
+	{ "number": 955, "color": "Nile Green Light", "rgb_value": [162, 214, 173]},
+	{ "number": 954, "color": "Nile Green", "rgb_value": [136, 186, 145]},
+	{ "number": 913, "color": "Nile Green Med", "rgb_value": [109, 171, 119, 100]},
+
+	{ "number": 912, "color": "Emerald Green Lt", "rgb_value": [27, 157, 107]},
+	{ "number": 911, "color": "Emerald Green Med", "rgb_value": [24, 144, 101]},
+	{ "number": 910, "color": "Emerald Green Dark", "rgb_value": [24, 126, 86]},
+	{ "number": 909, "color": "Emerald Green Vy Dk", "rgb_value": [21, 111, 73]},
+	{ "number": 3818, "color": "Emerald Grn Ult V Dk", "rgb_value": [17, 90, 59]},
+
+	{ "number": 369, "color": "Pistachio Green Vy Lt", "rgb_value": [215, 237, 204]},
+	{ "number": 368, "color": "Pistachio Green Lt", "rgb_value": [166, 194, 152]},
+	{ "number": 320, "color": "Pistachio Green Med", "rgb_value": [105, 136, 90]},
+	{ "number": 367, "color": "Pistachio Green Dk", "rgb_value": [97, 122, 82]},
+	{ "number": 319, "color": "Pistachio Grn Vy Dk", "rgb_value": [32, 95, 46]},
+	{ "number": 890, "color": "Pistachio Grn Ult V D", "rgb_value": [23, 73, 35]},
+
+	{ "number": 164, "color": "Forest Green Lt", "rgb_value": [200, 216, 184]},
+	{ "number": 989, "color": "Forest Green", "rgb_value": [141, 166, 117]},
+	{ "number": 988, "color": "Forest Green Med", "rgb_value": [115, 139, 91]},
+	{ "number": 987, "color": "Forest Green Dk", "rgb_value": [88, 113, 65]},
+	{ "number": 986, "color": "Forest Green Vy Dk", "rgb_value": [64, 82, 48]},
+
+	{ "number": 772, "color": "Yellow Green Vy Lt", "rgb_value": [236, 247, 195, 0.7]},
+	{ "number": 3348, "color": "Yellow Green Lt", "rgb_value": [236, 247, 195]},
+	{ "number": 3347, "color": "Yellow Green Med", "rgb_value": [162, 179, 124]},
+
+	{ "number": 3346, "color": "Hunter Green", "rgb_value": [64, 106, 58]},
+	{ "number": 3345, "color": "Hunter Green Dk", "rgb_value": [27, 89, 21]},
+	{ "number": 895, "color": "Hunter Green Vy Dk", "rgb_value": [27, 83, 0]},
+
+	{ "number": 704, "color": "Chartreuse Bright", "rgb_value": [158, 207, 52]},
+	{ "number": 703, "color": "Chartreuse", "rgb_value": [123, 181, 71]},
+
+	{ "number": 702, "color": "Kelly Green", "rgb_value": [71, 167, 47]},
+	{ "number": 701, "color": "Green Light", "rgb_value": [63, 143, 41]},
+	{ "number": 700, "color": "Green Bright", "rgb_value": [7, 115, 27]},
+	{ "number": 699, "color": "Green", "rgb_value": [5, 101, 23]},
+
+	{ "number": 907, "color": "Parrot Green Lt", "rgb_value": [199, 230, 102]},
+	{ "number": 906, "color": "Parrot Green Md", "rgb_value": [127, 179, 53]},
+	{ "number": 905, "color": "Parrot Green Dk", "rgb_value": [98, 138, 40]},
+	{ "number": 904, "color": "Parrot Green V Dk", "rgb_value": [85, 120, 34]},
+
+	{ "number": 472, "color": "Avocado Grn U Lt", "rgb_value": [216, 228, 152]},
+	{ "number": 471, "color": "Avocado Grn V Lt", "rgb_value": [174, 191, 121]},
+	{ "number": 470, "color": "Avocado Grn Lt", "rgb_value": [148, 171, 79]},
+	{ "number": 469, "color": "Avocado Green", "rgb_value": [114, 132, 60]},
+	{ "number": 937, "color": "Avocado Green Md", "rgb_value": [98, 113, 51]},
+	{ "number": 936, "color": "Avocado Grn V Dk", "rgb_value": [76, 88, 38]},
+	{ "number": 935, "color": "Avocado Green Dk", "rgb_value": [66, 77, 33]},
+	{ "number": 934, "color": "Avocado Grn Black", "rgb_value": [76, 81, 61]},
+
+	{ "number": 523, "color": "Fern Green Lt", "rgb_value": [171, 177, 151]},
+	{ "number": 524, "color": "Fern Green Vy Lt", "rgb_value": [196, 205, 172]},
+	{ "number": 522, "color": "Fern Green", "rgb_value": [150, 158, 126]},
+	{ "number": 520, "color": "Fern Green Dark", "rgb_value": [102, 109, 79]},
+
+	{ "number": 3053, "color": "Green Gray", "rgb_value": [156, 164, 130]},
+	{ "number": 3052, "color": "Green Gray Md", "rgb_value": [136, 146, 104]},
+	{ "number": 3051, "color": "Green Gray Dk", "rgb_value": [95, 102, 72]},
+
+	{ "number": 3364, "color": "Pine Green", "rgb_value": [131, 151, 95]},
+	{ "number": 3363, "color": "Pine Green Md", "rgb_value": [114, 130, 86]},
+	{ "number": 3362, "color": "Pine Green Dk", "rgb_value": [94, 107, 71]},
+
+	{ "number": 165, "color": "Moss Green Vy Lt", "rgb_value": [239, 244, 164]},
+	{ "number": 3819, "color": "Moss Green Lt", "rgb_value": [224, 232, 104]},
+	{ "number": 166, "color": "Moss Green Md Lt", "rgb_value": [192, 200, 64]},
+	{ "number": 581, "color": "Moss Green", "rgb_value": [167, 174, 56]},
+	{ "number": 580, "color": "Moss Green Dk", "rgb_value": [136, 141, 51]},
+
+	{ "number": 734, "color": "Olive Green Lt", "rgb_value": [199, 192, 119]},
+	{ "number": 733, "color": "Olive Green Md", "rgb_value": [188, 179, 76]},
+	{ "number": 732, "color": "Olive Green", "rgb_value": [148, 140, 54]},
+	{ "number": 730, "color": "Olive Green V Dk", "rgb_value": [130, 123, 48]},
+
+	{ "number": 3013, "color": "Khaki Green Lt", "rgb_value": [178, 174, 144]},
+	{ "number": 3012, "color": "Khaki Green Md", "rgb_value": [166, 167, 93]},
+	{ "number": 3011, "color": "Khaki Green Dk", "rgb_value": [137, 138, 88]},
+
+	{ "number": 372, "color": "Mustard Lt", "rgb_value": [204, 183, 132]},
+	{ "number": 371, "color": "Mustard", "rgb_value": [191, 166, 113]},
+	{ "number": 370, "color": "Mustard Medium", "rgb_value": [184, 157, 100]},
+
+	{ "number": 834, "color": "Golden Olive Vy Lt", "rgb_value": [219, 190, 127]},
+	{ "number": 833, "color": "Golden Olive Lt", "rgb_value": [200, 171, 108]},
+	{ "number": 832, "color": "Golden Olive", "rgb_value": [189, 155, 81]},
+	{ "number": 831, "color": "Golden Olive Md", "rgb_value": [170, 143, 86]},
+	{ "number": 830, "color": "Golden Olive Dk", "rgb_value": [141, 120, 75]},
+	{ "number": 829, "color": "Golden Olive Vy Dk", "rgb_value": [126, 107, 66]},
+
+	{ "number": 613, "color": "Drab Brown V Lt", "rgb_value": [220, 196, 170]},
+	{ "number": 612, "color": "Drab Brown Lt", "rgb_value": [188, 154, 120]},
+	{ "number": 611, "color": "Drab Brown", "rgb_value": [150, 118, 86]},
+	{ "number": 610, "color": "Drab Brown Dk", "rgb_value": [121, 96, 71]},
+
+	{ "number": 3047, "color": "Yellow Beige Lt", "rgb_value": [231, 214, 193]},
+	{ "number": 3046, "color": "Yellow Beige Md", "rgb_value": [216, 188, 154]},
+	{ "number": 3045, "color": "Yellow Beige Dk", "rgb_value": [188, 150, 106]},
+	{ "number": 167, "color": "Yellow Beige V Dk", "rgb_value": [167, 124, 73]},
+
+	
+	{ "number": 677, "color": "Old Gold Vy Lt", "rgb_value": [245, 236, 203]},
+	{ "number": 676, "color": "Old Gold Lt", "rgb_value": [229, 206, 151]},
+	{ "number": 729, "color": "Old Gold Medium", "rgb_value": [208, 165, 62]},
+	{ "number": 680, "color": "Old Gold Dark", "rgb_value": [188, 141, 14]},
+	{ "number": 3829, "color": "Old Gold Vy Dark", "rgb_value": [169, 130, 4]},
+
+	{ "number": 422, "color": "Hazelnut Brown Lt", "rgb_value": [198, 159, 123]},
+	{ "number": 3828, "color": "Hazelnut Brown", "rgb_value": [183, 139, 97]},
+	{ "number": 420, "color": "Hazelnut Brown Dk", "rgb_value": [160, 112, 66]},
+	{ "number": 869, "color": "Hazelnut Brown V Dk", "rgb_value": [131, 94, 57]},
+
+
+	{ "number": 728, "color": "Topaz", "rgb_value": [228, 180, 104]},
+	{ "number": 783, "color": "Topaz Medium", "rgb_value": [206, 145, 36]},
+	{ "number": 782, "color": "Topaz Dark", "rgb_value": [174, 119, 32]},
+	{ "number": 780, "color": "Topaz Ultra Vy Dk", "rgb_value": [148, 99, 26]},
+
+	{ "number": 3822, "color": "Straw Light", "rgb_value": [246, 220, 152]},
+	{ "number": 3821, "color": "Straw", "rgb_value": [243, 206, 117]},
+	{ "number": 3820, "color": "Straw Dark", "rgb_value": [223, 182, 95]},
+	{ "number": 3852, "color": "Straw Very Dark", "rgb_value": [205, 157, 55]},
+
+	{ "number": 745, "color": "Yellow Pale Light", "rgb_value": [255, 233, 173]},
+	{ "number": 744, "color": "Yellow Pale", "rgb_value": [255, 231, 147]},
+	{ "number": 743, "color": "Yellow Med", "rgb_value": [254, 211, 118]},
+	{ "number": 3078, "color": "Golden Yellow Vy Lt", "rgb_value": [253, 249, 205]},
+
+	{ "number": 445, "color": "Lemon Light", "rgb_value": [255, 251, 139]},
+	{ "number": 307, "color": "Lemon", "rgb_value": [253, 237, 84]},
+	{ "number": 444, "color": "Lemon Dark", "rgb_value": [255, 214, 0]},
+
+	{ "number": 973, "color": "Canary Bright", "rgb_value": [255, 227, 0]},
+	{ "number": 972, "color": "Canary Deep", "rgb_value": [255, 181, 21]},
+
+	{ "number": 727, "color": "Topaz Vy Lt", "rgb_value": [255, 241, 175]},
+	{ "number": 726, "color": "Topaz Light", "rgb_value": [253, 215, 85]},
+	{ "number": 725, "color": "Topaz Med Lt", "rgb_value": [255, 200, 64]},
+
+	{ "number": 742, "color": "Tangerine Light", "rgb_value": [255, 191, 87]},
+	{ "number": 741, "color": "Tangerine Med", "rgb_value": [255, 163, 43]},
+	{ "number": 740, "color": "Tangerine", "rgb_value": [255, 139, 0]},
+
+	{ "number": 970, "color": "Pumpkin Light", "rgb_value": [247, 139, 19]},
+	{ "number": 3825, "color": "Pumpkin Pale", "rgb_value": [253, 189, 150]},
+
+
+	{ "number": 947, "color": "Burnt Orange", "rgb_value": [255, 123, 77]},
+	{ "number": 946, "color": "Burnt Orange Med", "rgb_value": [235, 99, 7]},
+	{ "number": 900, "color": "Burnt Orange Dark", "rgb_value": [209, 88, 7]},
+	{ "number": 608, "color": "Burnt Orange Bright", "rgb_value": [253, 93, 53]},
+
+	{ "number": 967, "color": "Apricot Very Light", "rgb_value": [255, 222, 213]},
+	{ "number": 3824, "color": "Apricot Light", "rgb_value": [254, 205, 194]},
+	{ "number": 3341, "color": "Apricot", "rgb_value": [252, 171, 152]},
+	{ "number": 3340, "color": "Apricot Med", "rgb_value": [255, 131, 111]},
+	
+
+	{ "number": 606, "color": "Orange‑Red Bright", "rgb_value": [250, 50, 3]},
+	
+	{ "number": 722, "color": "Orange Spice Light", "rgb_value": [247, 151, 111]},
+	{ "number": 721, "color": "Orange Spice Med", "rgb_value": [242, 120, 66]},
+	{ "number": 720, "color": "Orange Spice Dark", "rgb_value": [229, 92, 31]},
+
+	{ "number": 922, "color": "Copper Light", "rgb_value": [226, 115, 35]},
+	{ "number": 921, "color": "Copper", "rgb_value": [198, 98, 24]},
+	{ "number": 920, "color": "Copper Med", "rgb_value": [172, 84, 20]},
+	{ "number": 919, "color": "Red‑Copper", "rgb_value": [166, 69, 16]},
+	{ "number": 918, "color": "Red‑Copper Dark", "rgb_value": [130, 52, 10]},
+
+	{ "number": 951, "color": "Tawny Light", "rgb_value": [255, 226, 207]},
+	{ "number": 3770, "color": "Tawny Vy Light", "rgb_value": [255, 238, 227]},
+	{ "number": 945, "color": "Tawny", "rgb_value": [251, 213, 187]},
+	
+	{ "number": 3856, "color": "Mahogany Ult Vy Lt", "rgb_value": [255, 211, 181]},
+	{ "number": 402, "color": "Mahogany Vy Lt", "rgb_value": [247, 167, 119]},
+	{ "number": 3776, "color": "Mahogany Light", "rgb_value": [207, 121, 57]},
+	{ "number": 301, "color": "Mahogany Med", "rgb_value": [179, 95, 43]},
+	{ "number": 400, "color": "Mahogany Dark", "rgb_value": [143, 67, 15]},
+	{ "number": 300, "color": "Mahogany Vy Dk", "rgb_value": [111, 47, 0]},
+
+	{ "number": 3823, "color": "Yellow Ultra Pale", "rgb_value": [255, 253, 227]},
+
+	{ "number": 3855, "color": "Autumn Gold Lt", "rgb_value": [250, 211, 150]},
+	{ "number": 3854, "color": "Autumn Gold Med", "rgb_value": [242, 175, 104]},
+	{ "number": 3853, "color": "Autumn Gold Dk", "rgb_value": [242, 151, 70]},
+	
+	{ "number": 3827, "color": "Golden Brown Pale", "rgb_value": [247, 187, 119]},
+	{ "number": 977, "color": "Golden Brown Light", "rgb_value": [220, 156, 86]},
+	{ "number": 976, "color": "Golden Brown Med", "rgb_value": [194, 129, 66]},
+	{ "number": 3826, "color": "Golden Brown", "rgb_value": [173, 114, 57]},
+	{ "number": 975, "color": "Golden Brown Dk", "rgb_value": [145, 79, 18]},
+
+	{ "number": 948, "color": "Peach Very Light", "rgb_value": [254, 231, 218]},
+	{ "number": 754, "color": "Peach Light", "rgb_value": [247, 203, 191]},
+
+	{ "number": 3771, "color": "Terra Cotta Ult Vy Lt", "rgb_value": [244, 187, 169]},
+	{ "number": 758, "color": "Terra Cotta Vy Lt", "rgb_value": [238, 170, 155]},
+	{ "number": 3778, "color": "Terra Cotta Light", "rgb_value": [217, 137, 120]},
+	{ "number": 356, "color": "Terra Cotta Med", "rgb_value": [197, 106, 91]},
+	{ "number": 3830, "color": "Terra Cotta", "rgb_value": [185, 85, 68]},
+	{ "number": 355, "color": "Terra Cotta Dark", "rgb_value": [152, 68, 54]},
+	{ "number": 3777, "color": "Terra Cotta Vy Dk", "rgb_value": [134, 8, 34]},
+
+	{ "number": 3779, "color": "Rosewood Ult Vy Lt", "rgb_value": [248, 202, 200]},
+	{ "number": 3859, "color": "Rosewood Light", "rgb_value": [186, 139, 124]},
+	{ "number": 3858, "color": "Rosewood Med", "rgb_value": [150, 74, 63]},
+	{ "number": 3857, "color": "Rosewood Dark", "rgb_value": [104, 37, 2]},
+	
+	{ "number": 3774, "color": "Desert Sand Vy Lt", "rgb_value": [243, 225, 215]},
+	{ "number": 950, "color": "Desert Sand Light", "rgb_value": [238, 211, 196]},
+	{ "number": 3064, "color": "Desert Sand", "rgb_value": [196, 142, 112]},
+	{ "number": 407, "color": "Desert Sand Med", "rgb_value": [187, 129, 97]},
+	{ "number": 3772, "color": "Desert Sand Vy Dk", "rgb_value": [160, 108, 80]},
+	{ "number": 632, "color": "Desert Sand Ult Vy Dk", "rgb_value": [135, 85, 57]},
+	
+	{ "number": 453, "color": "Shell Gray Light", "rgb_value": [215, 206, 203]},
+	{ "number": 452, "color": "Shell Gray Med", "rgb_value": [192, 179, 174]},
+	{ "number": 451, "color": "Shell Gray Dark", "rgb_value": [145, 123, 115]},
+
+	{ "number": 3861, "color": "Cocoa Light", "rgb_value": [166, 136, 129]},
+	{ "number": 3860, "color": "Cocoa", "rgb_value": [125, 93, 87]},
+	{ "number": 779, "color": "Cocoa Dark", "rgb_value": [98, 75, 69]},
+	{ "number": 712, "color": "Cream", "rgb_value": [255, 251, 239]},
+	{ "number": 739, "color": "Tan Ult Vy Lt", "rgb_value": [248, 228, 200]},
+	{ "number": 738, "color": "Tan Very Light", "rgb_value": [236, 204, 158]},
+	{ "number": 437, "color": "Tan Light", "rgb_value": [228, 187, 142]},
+	{ "number": 436, "color": "Tan", "rgb_value": [203, 144, 81]},
+	{ "number": 435, "color": "Brown Very Light", "rgb_value": [184, 119, 72]},
+	{ "number": 434, "color": "Brown Light", "rgb_value": [152, 94, 51]},
+	{ "number": 433, "color": "Brown Med", "rgb_value": [122, 69, 31]},
+	
+	{ "number": 801, "color": "Coffee Brown Dk", "rgb_value": [101, 57, 25]},
+	{ "number": 898, "color": "Coffee Brown Vy Dk", "rgb_value": [73, 42, 19]},
+	{ "number": 938, "color": "Coffee Brown Ult Dk", "rgb_value": [54, 31, 14]},
+	{ "number": 3371, "color": "Black Brown", "rgb_value": [30, 17, 8]},
+
+
+	{ "number": 3864, "color": "Mocha Beige Light", "rgb_value": [203, 182, 156]},
+	{ "number": 3863, "color": "Mocha Beige Med", "rgb_value": [164, 131, 92]},
+	{ "number": 3862, "color": "Mocha Beige Dark", "rgb_value": [138, 110, 78]},
+
+
+	{ "number": 822, "color": "Beige Gray Light", "rgb_value": [231, 226, 211]},
+	{ "number": 644, "color": "Beige Gray Med", "rgb_value": [221, 216, 203]},
+	{ "number": 642, "color": "Beige Gray Dark", "rgb_value": [164, 152, 120]},
+	{ "number": 640, "color": "Beige Gray Vy Dk", "rgb_value": [133, 123, 97]},
+	{ "number": 3790, "color": "Beige Gray Ult Dk", "rgb_value": [127, 106, 85]},
+
+	{ "number": 3787, "color": "Brown Gray Dark", "rgb_value": [109, 102, 83]},
+	{ "number": 3021, "color": "Brown Gray Vy Dk", "rgb_value": [76, 72, 39]},
+	{ "number": 3024, "color": "Brown Gray Vy Lt", "rgb_value": [193, 193, 183]},
+	{ "number": 3023, "color": "Brown Gray Light", "rgb_value": [165, 160, 139]},
+	{ "number": 3022, "color": "Brown Gray Med", "rgb_value": [110, 90, 64]},
+
+	{ "number": 535, "color": "Ash Gray Vy Lt", "rgb_value": [99, 100, 88]},
+
+	{ "number": 3033, "color": "Mocha Brown Vy Lt", "rgb_value": [179, 160, 139, 0.7]},
+	{ "number": 3782, "color": "Mocha Brown Lt", "rgb_value": [202, 195, 169]},
+	{ "number": 3032, "color": "Mocha Brown Med", "rgb_value": [179, 159, 139]},
+	{ "number": 3781, "color": "Mocha Brown Dk", "rgb_value": [54, 43, 24]},
+	{ "number": 3866, "color": "Mocha Brn Ult Vy Lt", "rgb_value": [250, 246, 240]},
+
+	{ "number": 842, "color": "Beige Brown Vy Lt", "rgb_value": [209, 186, 161]},
+	{ "number": 841, "color": "Beige Brown Lt", "rgb_value": [182, 155, 126]},
+	{ "number": 840, "color": "Beige Brown Med", "rgb_value": [154, 124, 92]},
+	{ "number": 839, "color": "Beige Brown Dk", "rgb_value": [103, 85, 65]},
+	{ "number": 838, "color": "Beige Brown Vy Dk", "rgb_value": [89, 73, 55]},
+	{ "number": 543, "color": "Beige Brown Ult Vy Lt", "rgb_value": [242, 227, 206]},
+
+	{ "number": 3072, "color": "Beaver Gray Vy Lt", "rgb_value": [230, 232, 232]},
+	{ "number": 648, "color": "Beaver Gray Lt", "rgb_value": [188, 180, 172]},
+	{ "number": 647, "color": "Beaver Gray Med", "rgb_value": [176, 166, 156]},
+	{ "number": 646, "color": "Beaver Gray Dk", "rgb_value": [135, 125, 115]},
+	{ "number": 645, "color": "Beaver Gray Vy Dk", "rgb_value": [110, 101, 92]},
+	{ "number": 844, "color": "Beaver Gray Ult Dk", "rgb_value": [72, 72, 72]},
+
+	{ "number": 762, "color": "Pearl Gray Vy Lt", "rgb_value": [236, 236, 236]},
+	{ "number": 415, "color": "Pearl Gray", "rgb_value": [211, 211, 214]},
+	
+	{ "number": 318, "color": "Steel Gray Lt", "rgb_value": [171, 171, 171]},
+	{ "number": 414, "color": "Steel Gray Dk", "rgb_value": [140, 140, 140]},
+	
+	{ "number": 168, "color": "Pewter Very Light", "rgb_value": [209, 209, 209]},
+	{ "number": 169, "color": "Pewter Light", "rgb_value": [132, 132, 132]},
+	{ "number": 317, "color": "Pewter Gray", "rgb_value": [108, 108, 108]},
+	{ "number": 413, "color": "Pewter Gray Dark", "rgb_value": [86, 86, 86]},
+	{ "number": 3799, "color": "Pewter Gray Vy Dk", "rgb_value": [66, 66, 66]},
+	
+	{ "number": "b5200", "color": "Snow White", "rgb_value": [255, 255, 255]},
+	{ "number": "blanc", "color": "White", "rgb_value": [252, 251, 248]},
+	{ "number": 746, "color": "Off White", "rgb_value": [252, 252, 238]},
+	{ "number": 3865, "color": "Winter White", "rgb_value": [249, 247, 241]},
+	{ "number": "ecru", "color": "Ecru", "rgb_value": [240, 234, 218]},
+	{ "number": 310, "color": "Black", "rgb_value": [0, 0, 0]}
+
+]
