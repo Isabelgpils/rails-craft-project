@@ -1,12 +1,9 @@
-<main class= "container" >
-  <h1>Editing dmc</h1>
-
-  <%= render "form", dmc: @dmc %>
-
-  <br>
+<div class="container pt-5">
+  <h1 class="mt-5">Edit DMC</h1>
+  <%= render "form", dmc: @dmc%>
 
   <div>
-    <%= link_to "Show this dmc", @dmc %> |
-    <%= link_to "Back to dmcs", dmcs_path %>
+    <%= link_to "Show this DMC Thread", @dmc, class: "btn btn-outline-secondary" %> 
+    <%= link_to "Back to DMC Threads", dmcs_path, class: "btn btn-secondary"%>
   </div>
-</main>
+</div>

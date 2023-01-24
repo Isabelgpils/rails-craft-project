@@ -1,12 +1,26 @@
-<main class= "container" >  
-  <p style="color: green"><%= notice %></p>
-
-  <%= render @dmc %>
-  <%= image_tag @dmc.image %>
-  <div>
-    <%= link_to "Edit this dmc", edit_dmc_path(@dmc) %> |
-    <%= link_to "Back to dmcs", dmcs_path %>
-
-    <%= button_to "Destroy this dmc", @dmc, method: :delete %>
-  </div>
 </main>
+<div class="container pt-5">
+  <p style="color: green"><%= notice %></p>
+  <div class="card mb-3 mt-5" style="max-width: 900px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <% if @dmc.image.present?%>
+          <%= image_tag @dmc.image, class: "card-img p-3" %>
+        <% else %>
+          <h6> No Image Uploaded </h6>
+        <% end %> 
+      </div> 
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= "DMC #{@dmc.number}" %></h5>
+          <p class="card-text"><%=  @dmc.color %></p>
+          <div class="mb-5">
+            <%= link_to "Edit Bead", edit_dmc_path(@dmc), class: "btn btn-outline-secondary float-start"%>
+            <%= button_to "Delete Bead", @dmc, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= link_to "Back to Beads", dmcs_path, class: "btn btn-secondary" %>
+</div>
