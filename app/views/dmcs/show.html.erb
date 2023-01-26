@@ -15,12 +15,12 @@
           <h5 class="card-title"><%= "DMC #{@dmc.number}" %></h5>
           <p class="card-text"><%=  @dmc.color %></p>
           <div class="mb-5">
-            <%= link_to "Edit DMC", edit_dmc_path(@dmc), class: "btn btn-outline-secondary float-start"%>
+            <%= link_to "Edit DMC", edit_dmc_path(@dmc), class: "btn btn-secondary float-start"%>
             <%= button_to "Delete DMC", @dmc, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <%= link_to "Back to DMC", dmcs_path, class: "btn btn-secondary" %>
+  <%= link_to "Back to DMC", dmcs_path, class: "btn btn-info" %>
 </div>

@@ -16,11 +16,11 @@
           <p class="card-title"><%= "Thread Type: #{@silk.thread_type}"%>
           <p class="card-title"><%= "Patterns: #{@silk.pattern}"%></p> 
           <div class= "pt-3 pb-5">
-            <%= link_to "Edit Silk", edit_silk_path(@silk), class: "btn btn-outline-secondary float-start" %>
+            <%= link_to "Edit Silk", edit_silk_path(@silk), class: "btn btn-secondary float-start" %>
             <%= button_to "Delete Silk", @silk, method: :delete, class: "btn btn-outline-danger ms-3 float-start " %> 
           </div>
       </div>
     </div>
   </div>
 </div>
-<%= link_to "Back to Silks", silks_path, class: "btn btn-secondary" %>
+<%= link_to "Back to Silks", silks_path, class: "btn btn-info" %>
