@@ -53,6 +53,7 @@ gem "erb_lint"
 gem "image_processing", "~> 1.2"
 
 gem "devise"
+gem "ransack"
 
 gem 'active_storage_validations'
 

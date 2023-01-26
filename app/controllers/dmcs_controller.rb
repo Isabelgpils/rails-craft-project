@@ -1,10 +1,12 @@
 class DmcsController < ApplicationController
   before_action :set_dmc, only: %i[ show edit update destroy ]
-  # before_action :authenticate_user!
-  
-  # GET /dmcs or /dmcs.json
+  before_action :authenticate_user!
+
+    # GET /articles or /articles.json
   def index
-    @dmcs = Dmc.all
+    @q = Dmc.ransack(params[:q])
+    @dmcs = @q.result(distinct: true)
+    # @dmcs = Dmc.all
   end
 
   # GET /dmcs/1 or /dmcs/1.json
