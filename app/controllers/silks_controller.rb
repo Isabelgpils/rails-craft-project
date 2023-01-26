@@ -1,10 +1,12 @@
 class SilksController < ApplicationController
   before_action :set_silk, only: %i[ show edit update destroy ]
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
   
   # GET /silks or /silks.json
   def index
-    @silks = Silk.all
+    @q = Silk.ransack(params[:q])
+    @silks= @q.result(distinct: true)
+    # @silks = Silk.all
   end
 
   # GET /silks/1 or /silks/1.json

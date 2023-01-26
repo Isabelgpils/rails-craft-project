@@ -1,6 +1,18 @@
 <div class="container">
   <p style="color: green"><%= notice %></p>
-  <h6 class="display-6 mt-5 pt-5 mb-3 text-align-center"> Beads  <%= link_to "Add New Bead", new_bead_path, class: "btn btn-outline-secondary ms-5" %></h6>
+  <div class= "row mt-5 pt-5 pb-5 my-auto">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <h6 class= "display-5">Beads</h6>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <h5>
+        <%= link_to "Add New Bead", new_bead_path, class: "btn btn-outline-secondary" %>
+      </h5>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <h5><%= render 'beads/search_form' %></h5>
+    </div>
+  </div>
   <div class="row align-items-start">
     <% @beads.sort_by{|bead| bead.number}.each do |bead| %>
       <div class="col-lg-3 col-md-4 col-sm-12">

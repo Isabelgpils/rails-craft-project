@@ -1,7 +1,18 @@
 <div class= "container">
   <p style= "color: green"><%= notice %></p>
-  <h6 class= "display-6 mt-5 pt-5 mb-3 text-align-center"> Silk Threads<%= link_to "Add New Silk", new_silk_path, class: "btn btn-outline-secondary ms-5" %> </h6>
-    <%# <% @silks.sort_by{|silk| silk.number }.each do |silk| %> 
+   <div class= "row mt-5 pt-5 pb-5 my-auto">
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <h6 class= "display-5">Silks</h6>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <h5>
+        <%= link_to "Add New Silk", new_silk_path, class: "btn btn-outline-secondary" %>
+      </h5>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+      <h5><%= render 'silks/search_form' %></h5>
+    </div>
+  </div> 
   <div class="row align-items-start">
     <% @silks.sort_by{|silk| [silk.brand, silk.number]}.each do |silk| %>
       <div class="col-lg-3 col-md-4 col-sm-12">

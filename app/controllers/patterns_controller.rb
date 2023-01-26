@@ -3,7 +3,9 @@ class PatternsController < ApplicationController
 
   # GET /patterns or /patterns.json
   def index
-    @patterns = Pattern.all
+    @q = Pattern.ransack(params[:q])
+    @patterns= @q.result(distinct: true)
+    # @patterns = Pattern.all
   end
 
   # GET /patterns/1 or /patterns/1.json
