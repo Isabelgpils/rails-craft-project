@@ -1,9 +1,12 @@
 class BeadsController < ApplicationController
   before_action :set_bead, only: %i[ show edit update destroy ]
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
+
   # GET /beads or /beads.json
   def index
-    @beads = Bead.all
+    @q = Bead.ransack(params[:q])
+    @beads= @q.result(distinct: true)
+    # @beads = Bead.all
   end
 
   # GET /beads/1 or /beads/1.json

@@ -3,7 +3,9 @@ class MetallicsController < ApplicationController
   # before_action :authenticate_user!
   # GET /metallics or /metallics.json
   def index
-    @metallics = Metallic.all
+    @q = Metallic.ransack(params[:q])
+    @metallics= @q.result(distinct: true)
+    # @metallics = Metallic.all
   end
 
   # GET /metallics/1 or /metallics/1.json
