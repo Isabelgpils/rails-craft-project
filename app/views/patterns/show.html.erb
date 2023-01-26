@@ -13,11 +13,11 @@
         <p class="card-text"><%= "#{@pattern.brand} #{@pattern.number}"%></p>
         <p class="card-text"><%= "Size: #{@pattern.size}"%></p>
         <div class="pb-5">
-          <%= link_to "Edit Pattern", edit_pattern_path(@pattern), class: "btn btn-outline-secondary float-start" %>
+          <%= link_to "Edit Pattern", edit_pattern_path(@pattern), class: "btn btn-secondary float-start" %>
           <%= button_to "Delete Pattern", @pattern , method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
         </div>
       </div>
     </div>
   </div>
 </div>
-<%= link_to "Back to patterns", patterns_path, class: "btn btn-secondary" %>
+<%= link_to "Back to patterns", patterns_path, class: "btn btn-info" %>

@@ -14,11 +14,11 @@
           <p class="card-title"><%= "Brand: #{@metallic.brand}"%></p> 
           <p class="card-title"><%= "Patterns: #{@metallic.pattern}"%></p>  
           <div class="pb-5">
-            <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-outline-secondary float-start" %>
+            <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-secondary float-start" %>
             <%= button_to "Delete Metallic", @metallic, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
           </div>
       </div>
     </div>
   </div>
 </div>
-<%= link_to "Back to Metallics", metallics_path, class: "btn btn-secondary" %>
+<%= link_to "Back to Metallics", metallics_path, class: "btn btn-info" %>
