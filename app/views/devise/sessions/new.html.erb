@@ -1,7 +1,7 @@
 <div class="container">
-  <h2 class="display-5 mt-5 mb-3">Log in</h2>
+  <h2 class="display-5 mt-5 pt-5 mb-3">Log in</h2>
 
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), local: true, data: { turbo: false }) do |f| %>
     <div class= "col-lg-4 col-sm-6">
       <div class="field">
         <%= f.label :email, class: "form-label mt-2" %><br />
