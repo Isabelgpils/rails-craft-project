@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The purpose of this project is to provide a way to easily view materials used for cross stitching projects; beads, threads and patterns. 
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+### Ruby version 3.1.3
+### Rails 7.0.4
+### Bootstrap 5
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
+
+## Upcoming Features
+### Add User Roles and Accounts
+### Add a Project list Model
+
+
+## DISPLAY
+### The UI was built using Material UI and Materialize CSS.
+
+### Chatelaine pattern images
+
+### thumbnails: https://www.chatelaine.de/
+### progress: personal photographs
+
+## Mirabilia/Nora Corbett pattern images
+
+### thumbnails: https://www.123stitch.com/
+### progress images: personal photographs
+## Ink Circles pattern images
+### thumbnails: https://www.inkcircles.com/
+### progress images: personal photographs
