@@ -36,6 +36,11 @@
       <%= form.file_field :image %>
     </div>
 
+    <div>
+      <%# <%= form.label :user_id, style: "display: block" %> 
+      <%= form.number_field :user_id, id: :pattern_user_id, type: :hidden, value: current_user.id %>
+    </div>
+
     <div class="pt-3">
       <%= form.submit %>
     </div>

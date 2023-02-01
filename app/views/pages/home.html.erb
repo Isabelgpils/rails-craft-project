@@ -1,16 +1,8 @@
 <div class= "container">
     <div class="jumbotron">
-        <div>
-            <% if current_user.admin? %>
-                <h6 class="text-center pt-5 mt-5">
-                    <h6> You are currently logged in as an Administrator. </h6>
-                    <p><%= "Current Accounts: #{User.count}"%>
-                <%# <%= link_to "Admin Dashboard", admin_dashboard_path, class: "btn btn-info mt-3 mb-5" %>
-                </h6>
-            <% end %>
-            <h6 class="display-6 mt-3 pt-3 mb-3 text-center">Spend less time sorting and more time stitching.</h6>
-            <%= image_tag "home/floss.jpg", class: "rounded-5 mx-auto d-block", style:"width: 50%;"%>
-            <figcaption class="small text-center"> Photo by Noor Sethi</figcaption>
-        </div>
+        <h6 class="display-6 mt-5 pt-5 mb-3 text-center">Spend less time searching and more time stitching.</h6>
+        <%= image_tag "home/thread-heart.jpg", class: "rounded-circle mx-auto d-block", style:"width: 41%;"%>
+        <figcaption class="small text-center"> Photo by Karly Santiago</figcaption>
+
     </div>
 </div>       
