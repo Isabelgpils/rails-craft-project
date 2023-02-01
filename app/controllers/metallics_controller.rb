@@ -1,6 +1,6 @@
 class MetallicsController < ApplicationController
   before_action :set_metallic, only: %i[ show edit update destroy ]
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
   # GET /metallics or /metallics.json
   def index
     @q = Metallic.ransack(params[:q])

@@ -1,6 +1,7 @@
 class PatternsController < ApplicationController
   before_action :set_pattern, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user! 
+  before_action :correct_user, only: [ :edit, :update, :destroy]
   # GET /patterns or /patterns.json
   def index
     @q = Pattern.ransack(params[:q])
@@ -14,7 +15,8 @@ class PatternsController < ApplicationController
 
   # GET /patterns/new
   def new
-    @pattern = Pattern.new
+    # @pattern = Pattern.new
+    @pattern = current_user.patterns.build
   end
 
   # GET /patterns/1/edit
@@ -23,8 +25,8 @@ class PatternsController < ApplicationController
 
   # POST /patterns or /patterns.json
   def create
-    @pattern = Pattern.new(pattern_params)
-
+    # @pattern = Pattern.new(pattern_params)
+    @pattern = current_user.patterns.build(pattern_params)
     respond_to do |format|
       if @pattern.save
         format.html { redirect_to pattern_url(@pattern), notice: "Pattern was successfully created." }
@@ -59,6 +61,11 @@ class PatternsController < ApplicationController
     end
   end
 
+  def correct_user
+    @pattern = current_user.patterns.find_by(id: params[:id])
+    redirect_to patterns_path, notice: "Not authorized to edit this pattern" if @pattern.nil?
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pattern
@@ -67,6 +74,6 @@ class PatternsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pattern_params
-      params.require(:pattern).permit(:brand, :pattern_name, :number, :size, :image)
+      params.require(:pattern).permit(:brand, :pattern_name, :number, :size, :image, :user_id)
     end
 end
