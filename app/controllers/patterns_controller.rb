@@ -1,12 +1,11 @@
 class PatternsController < ApplicationController
   before_action :set_pattern, only: %i[ show edit update destroy ]
   before_action :authenticate_user! 
-  before_action :correct_user, only: [ :edit, :update, :destroy]
+  
   # GET /patterns or /patterns.json
   def index
     @q = Pattern.ransack(params[:q])
     @patterns= @q.result(distinct: true)
-    # @patterns = Pattern.all
   end
 
   # GET /patterns/1 or /patterns/1.json
@@ -59,11 +58,6 @@ class PatternsController < ApplicationController
       format.html { redirect_to patterns_url, notice: "Pattern was successfully destroyed." }
       format.json { head :no_content }
     end
-  end
-
-  def correct_user
-    @pattern = current_user.patterns.find_by(id: params[:id])
-    redirect_to patterns_path, notice: "Not authorized to edit this pattern" if @pattern.nil?
   end
 
   private
