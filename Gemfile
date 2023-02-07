@@ -94,3 +94,5 @@ group :test do
 end
 
 gem "json", "~> 2.6"
+
+gem "rack-cors", "~> 1.1"
