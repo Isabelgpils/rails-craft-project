@@ -6,7 +6,6 @@ class SilksController < ApplicationController
   def index
     @q = Silk.ransack(params[:q])
     @silks= @q.result(distinct: true)
-    # @silks = Silk.all
   end
 
   # GET /silks/1 or /silks/1.json
