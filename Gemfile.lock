@@ -135,8 +135,6 @@ GEM
       smart_properties
     erubi (1.12.0)
     ffi (1.15.5)
-    font-awesome-sass (6.3.0)
-      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -331,7 +329,6 @@ DEPENDENCIES
   debug
   devise
   erb_lint
-  font-awesome-sass (~> 6.3.0)
   image_processing (~> 1.2)
   jbuilder
   jsbundling-rails
