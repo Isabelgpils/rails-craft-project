@@ -11,5 +11,4 @@ class User < ApplicationRecord
     end
 
   has_many :patterns
-
 end

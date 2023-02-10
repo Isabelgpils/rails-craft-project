@@ -1,17 +1,29 @@
 <div class="container mt-5 pt-5">
   <p style="color: green"><%= notice %></p>
   <div class="card mb-3" style="max-width: 1200px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <% if @pattern.image.present?%>
-        <%= image_tag @pattern.image, class: "card-img p-3" %>
-      <% end %>
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><%= @pattern.pattern_name%></h5>
-        <p class="card-text"><%= "#{@pattern.brand} #{@pattern.number}"%></p>
-        <p class="card-text"><%= "Size: #{@pattern.size}"%></p>
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <% if @pattern.image.present?%>
+          <%= image_tag @pattern.image, class: "card-img p-3" %>
+        <% end %>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title"><%= @pattern.pattern_name%></h3>
+          <h5 class="card-text"><%= "#{@pattern.brand} #{@pattern.number}"%></h5>
+          <p class="card-text"><%= "Size: #{@pattern.size}"%></p>
+          <p class="card-text">
+            <h5>Metallic Threads</h5>
+            <% metallics = Metallic.all %>
+            <% metallics.each do |metallic| %>
+              <% if "#{metallic.pattern}".include? "#{@pattern.pattern_name}" %>
+                <ul>
+                  <li><%= "#{metallic.thread_type} #{metallic.number}" %></li>
+                  <li><%= "#{metallic.pattern}" %></li>               
+                </ul>
+              <%end%>
+            <% end %>
+          </p>
         <div class="pb-5">
           <%= link_to "Edit Pattern", edit_pattern_path(@pattern), class: "btn btn-secondary float-start" %>
           <%= button_to "Delete Pattern", @pattern , method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
