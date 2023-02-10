@@ -1,11 +1,12 @@
 class MetallicsController < ApplicationController
   before_action :set_metallic, only: %i[ show edit update destroy ]
   before_action :authenticate_user!
+  
   # GET /metallics or /metallics.json
   def index
     @q = Metallic.ransack(params[:q])
-    @metallics= @q.result(distinct: true)
-    # @metallics = Metallic.all
+    @metallics= @q.result(distinct: true) || Metallic.all
+
   end
 
   # GET /metallics/1 or /metallics/1.json
@@ -67,6 +68,6 @@ class MetallicsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def metallic_params
-      params.require(:metallic).permit(:brand, :thread_type, :number, :color, :pattern, :image, :stash)
+      params.require(:metallic).permit(:brand, :thread_type, :number, :color, :pattern, :image, :stash , :pattern_metallics_attributes => [:id, :pattern_id, :metallic_id, :_destroy] )
     end
 end

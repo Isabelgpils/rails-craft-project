@@ -21,6 +21,7 @@ class BeadsController < ApplicationController
   def edit
   end
 
+
   # POST /beads or /beads.json
   def create
     @bead = Bead.new(bead_params)

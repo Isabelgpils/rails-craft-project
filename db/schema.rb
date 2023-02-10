@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_01_060850) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_10_154022) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -82,6 +82,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_01_060850) do
     t.string "stash"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "metallics_patterns", id: false, force: :cascade do |t|
+    t.bigint "pattern_id", null: false
+    t.bigint "metallic_id", null: false
+    t.index ["metallic_id"], name: "index_metallics_patterns_on_metallic_id"
+    t.index ["pattern_id"], name: "index_metallics_patterns_on_pattern_id"
   end
 
   create_table "patterns", force: :cascade do |t|

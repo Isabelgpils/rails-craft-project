@@ -26,6 +26,13 @@
                 <%= "#{metallic.thread_type} #{metallic.number}"%>
               </h5>
               <p class="card-text"><%= metallic.brand %></p> 
+              <p class="card-text">
+                <% if metallic.stash? %>
+                  <i style="color: green;" class="bi bi-bag-check-fill"></i>
+                <% else %> 
+                  <i style= "color: red;" class="bi bi-bag-x-fill"></i>
+                <% end %>
+              </p>
             </div>
             <p>
               <%= link_to "Show this metallic", metallic, class: "btn btn-secondary" %>
