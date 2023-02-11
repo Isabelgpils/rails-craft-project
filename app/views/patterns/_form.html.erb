@@ -14,12 +14,12 @@
 
     <div>
       <%= form.label :brand, style: "display: block" %>
-      <%= form.text_field :brand %>
+      <%= form.text_field :brand, :required => true%>
     </div>
 
     <div>
       <%= form.label :pattern_name, style: "display: block" %>
-      <%= form.text_field :pattern_name%>
+      <%= form.text_field :pattern_name, :required => true %>
     </div>
 
     <div>
@@ -37,7 +37,7 @@
     </div>
 
     <div>
-      <%= form.label :user_id, style: "display: block" %> 
+      <%# <%= form.label :user_id, style: "display: block", type: :hidden %> 
       <%= form.number_field :user_id, id: :pattern_user_id, type: :hidden, value: current_user.id %>
     </div>
 
