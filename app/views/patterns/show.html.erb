@@ -16,10 +16,9 @@
             <h5>Metallic Threads</h5>
             <% metallics = Metallic.all %>
             <% metallics.each do |metallic| %>
-              <% if "#{metallic.pattern}".include? "#{@pattern.pattern_name}" %>
+              <% if "#{@pattern.pattern_name}".in? "#{metallic.pattern}" %>
                 <ul>
-                  <li><%= "#{metallic.thread_type} #{metallic.number}" %></li>
-                  <li><%= "#{metallic.pattern}" %></li>               
+                  <li><%= link_to "#{metallic.thread_type} #{metallic.number}", metallic %></li>            
                 </ul>
               <%end%>
             <% end %>

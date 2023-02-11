@@ -34,11 +34,9 @@
     <div>
       <%= form.label :pattern, style: "display: block" %>
       <% Pattern.all.each do |pattern|%>
-        <%= form.check_box :"#{pattern.pattern_name}" %>
+        <%= form.check_box ":#{pattern.pattern_name}"  %>
         <%= form.label ":#{pattern.pattern_name}", "#{pattern.pattern_name}" %>
       <% end %>
-      <%# <%= form.collection_select :pattern_ids, Pattern.order(:brand, :pattern_name, ), :id, :pattern_name, {}, multiple: true %>
-     
     </div>
 
     <div>
