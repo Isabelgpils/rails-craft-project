@@ -16,9 +16,9 @@
               <i  class="bi bi-bag-x-fill text-danger"></i>
             <% end %>
           </h5> 
-          <p class="card-title"><%= "Color: #{@metallic.color}"%></p>
-          <p class="card-title"><%= "Brand: #{@metallic.brand}"%></p> 
-          <p class="card-title"><%= "Patterns: #{@metallic.pattern}" %></p>
+          <p class="card-title"><%= "Color:  #{@metallic.color}"%></p>
+          <p class="card-title"><%= "Brand:  #{@metallic.brand}"%></p>
+          <p class="card-title"><%= "All Patterns:  #{@metallic.pattern}" %></p>
           <div class="mb-5">
             <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-secondary float-start"%>
             <%= button_to "Delete Metallic", @metallic, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
