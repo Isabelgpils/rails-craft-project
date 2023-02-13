@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_12_213516) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_13_033725) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -62,6 +62,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_12_213516) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "beads_patterns", id: false, force: :cascade do |t|
+    t.bigint "pattern_id", null: false
+    t.bigint "bead_id", null: false
+    t.index ["bead_id"], name: "index_beads_patterns_on_bead_id"
+    t.index ["pattern_id"], name: "index_beads_patterns_on_pattern_id"
+  end
+
   create_table "dmcs", force: :cascade do |t|
     t.string "number"
     t.string "color"
@@ -102,6 +109,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_12_213516) do
     t.text "image"
     t.integer "user_id"
     t.index ["user_id"], name: "index_patterns_on_user_id"
+  end
+
+  create_table "patterns_silks", id: false, force: :cascade do |t|
+    t.bigint "pattern_id", null: false
+    t.bigint "silk_id", null: false
+    t.index ["pattern_id"], name: "index_patterns_silks_on_pattern_id"
+    t.index ["silk_id"], name: "index_patterns_silks_on_silk_id"
   end
 
   create_table "silks", force: :cascade do |t|

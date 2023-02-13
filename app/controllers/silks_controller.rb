@@ -70,6 +70,6 @@ class SilksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def silk_params
-      params.require(:silk).permit(:brand, :thread_type, :number, :color, :pattern, :image, :stash)
+      params.require(:silk).permit(:brand, :thread_type, :number, :color, :pattern, :image, :stash,  pattern_ids: [])
     end
 end
