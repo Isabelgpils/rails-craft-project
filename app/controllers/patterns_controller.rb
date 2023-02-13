@@ -68,6 +68,6 @@ class PatternsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pattern_params
-      params.require(:pattern).permit(:brand, :pattern_name, :number, :size, :image, :user_id, :pattern_metallics_attributes => [:id, :pattern_id, :metallic_id, :_destroy])
+      params.require(:pattern).permit(:brand, :pattern_name, :number, :size, :image, :user_id, bead_ids: [], silk_ids: [],:pattern_metallics_attributes => [:id, :pattern_id, :metallic_id, :_destroy])
     end
 end
