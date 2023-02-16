@@ -11,10 +11,10 @@
       </div> 
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"><%= "Delica #{@bead.number}" %></h5>
-          <p class="card-text"><%=  @bead.color %></p>
-          <p class="card-text"><%=  @bead.pattern %></p>
-          <div class="mb-5">
+          <h5 class="card-title display-6"><%= "Delica #{@bead.number}" %></h5>
+          <h6 class="card-text"><%=  "Color: #{@bead.color}" %></h6>
+          <h6 class="card-text"><%=  "All Patterns: #{@bead.pattern}" %></h6>
+          <div class="pt-5 pb-5">
             <%= link_to "Edit Bead", edit_bead_path(@bead), class: "btn btn-secondary float-start"%>
             <%= button_to "Delete Bead", @bead, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
           </div>

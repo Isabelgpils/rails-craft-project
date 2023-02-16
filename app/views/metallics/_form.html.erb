@@ -33,10 +33,7 @@
 
     <div>
       <%= form.label :pattern, style: "display: block" %>
-      <% Pattern.all.each do |pattern|%>
-        <%= form.check_box ":#{pattern.pattern_name}"  %>
-        <%= form.label ":#{pattern.pattern_name}", "#{pattern.pattern_name}" %>
-      <% end %>
+      <%= form.text_field :pattern %>
     </div>
 
     <div>

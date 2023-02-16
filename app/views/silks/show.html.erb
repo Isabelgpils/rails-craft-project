@@ -11,11 +11,11 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-text"><%= "#{@silk.brand} #{@silk.number}"%></p> 
-          <h6 class="card-title"><%= "Color: #{@silk.color}"%></h5>
-          <p class="card-title"><%= "Thread Type: #{@silk.thread_type}"%>
-          <p class="card-title"><%= "Patterns: #{@silk.pattern}"%></p> 
-          <div class= "pt-3 pb-5">
+          <h5 class="card-title display-6"><%= "#{@silk.color}"%></h5>
+          <h6 class="card-text"><%= "Number:  #{@silk.number}"%></h6> 
+          <h6 class="card-title"><%= "Brand: #{@silk.thread_type}"%></h6>
+          <h6 class="card-title"><%= "All Patterns: #{@silk.pattern}"%></h6> 
+          <div class= "pt-5 pb-5">
             <%= link_to "Edit Silk", edit_silk_path(@silk), class: "btn btn-secondary float-start" %>
             <%= button_to "Delete Silk", @silk, method: :delete, class: "btn btn-outline-danger ms-3 float-start " %> 
           </div>
