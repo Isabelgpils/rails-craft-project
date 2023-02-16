@@ -9,17 +9,17 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-text"><%= "#{@metallic.thread_type} #{@metallic.number}"%>
+          <h5 class="card-text display-6"><%= "#{@metallic.thread_type} #{@metallic.number}"%>
             <% if @metallic.stash? %>
               <i class="bi bi-bag-check-fill text-success"></i>
             <% else %> 
               <i  class="bi bi-bag-x-fill text-danger"></i>
             <% end %>
           </h5> 
-          <p class="card-title"><%= "Color:  #{@metallic.color}"%></p>
-          <p class="card-title"><%= "Brand:  #{@metallic.brand}"%></p>
-          <p class="card-title"><%= "All Patterns:  #{@metallic.pattern}" %></p>
-          <div class="mb-5">
+          <h6 class="card-title"><%= "Brand:  #{@metallic.brand}"%></h6>
+          <h6 class="card-title"><%= "Color:  #{@metallic.color}"%></h6>
+          <h6 class="card-title"><%= "All Patterns:  #{@metallic.pattern}" %></h6>
+          <div class="pt-5 pb-5">
             <%= link_to "Edit Metallic", edit_metallic_path(@metallic), class: "btn btn-secondary float-start"%>
             <%= button_to "Delete Metallic", @metallic, method: :delete, class: "btn btn-outline-danger ms-3 float-start" %>
           </div>

@@ -9,55 +9,52 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h3 class="card-title"><%= @pattern.pattern_name%></h3>
-          <h5 class="card-text"><%= "#{@pattern.brand} #{@pattern.number}"%></h5>
-          <p class="card-text"><%= "Size: #{@pattern.size}"%></p>
-          <p class="card-text">
+          <h5 class="card-title display-5"><%= @pattern.pattern_name%></h5>
+          <h5 class="card-text"><%= "Brand: #{@pattern.brand} #{@pattern.number}"%></h6>
+          <h5 class="card-text"><%= "Stitch Count: #{@pattern.size}"%></h6>
+          <h5 class="card-text pt-3">
             <h5>Metallic Threads</h5>
-            <% metallics = Metallic.all %>
-            <% metallics.each do |metallic| %>
+            <% Metallic.includes(:patterns).each do |metallic| %>
               <% if "#{@pattern.pattern_name}".in? "#{metallic.pattern}" %>
                 <ul>
                   <li><%= link_to "#{metallic.thread_type} #{metallic.number}", metallic %>
                     <% if metallic.image.present? %>
-                      <%= image_tag metallic.image, class: "thumbnail float-start", style: "width: 30px; height: 30px;"%>
+                      <%= image_tag metallic.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
                     <% end %>
                   </li>            
                 </ul>
               <%end%>
             <% end %>
-          </p>
-          <p class="card-text">
-            <h5>Beads</h5>
-            <% beads = Bead.all %>
-            <% beads.each do |bead| %>
+          </h6>
+          <h6 class="card-text display-6">
+            <h5 class="pt-3">Beads</h5>
+            <% Bead.all.includes(:patterns).each do |bead| %>
               <% if "#{@pattern.pattern_name}".in? "#{bead.pattern}" %>
                 <ul>
                   <li><%= link_to "DB #{bead.number}", bead %>                
                     <% if bead.image.present? %>
-                      <%= image_tag bead.image, class: "thumbnail float-start", style: "width: 30px; height: 30px;"%>
+                      <%= image_tag bead.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
                     <% end %>
                   </li>            
                 </ul>
               <% end %>
             <% end %>        
-          </p>
-          <p class="card-text">
-            <h5>Silks</h5>
-            <% silks = Silk.all %>
-            <% silks.each do |silk| %>
+          </h6>
+          <h6 class="card-text display-6">
+            <h5 class="pt-3">Silks</h5>
+            <% Silk.all.includes(:patterns).each do |silk| %>
               <% if "#{@pattern.pattern_name}".in? "#{silk.pattern}" %>
                 <ul>
                   <li><%= link_to "#{silk.brand} #{silk.number}", silk %>                
                     <% if silk.image.present? %>
-                      <%= image_tag silk.image, class: "thumbnail float-start", style: "width: 30px; height: 30px;"%>
+                      <%= image_tag silk.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
                     <% end %>
                   </li>            
                 </ul>
               <% end %>
             <% end %>        
-          </p>
-        <div class="pb-5">
+          </h6>
+        <div class="pt-5 pb-5">
           <%= link_to "Edit Pattern", edit_pattern_path(@pattern), class: "btn btn-secondary float-start" %>
           <%= button_to "Delete Pattern", @pattern , method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
         </div>
