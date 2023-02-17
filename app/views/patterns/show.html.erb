@@ -12,9 +12,9 @@
           <h5 class="card-title display-5"><%= @pattern.pattern_name%></h5>
           <h5 class="card-text"><%= "Brand: #{@pattern.brand} #{@pattern.number}"%></h6>
           <h5 class="card-text"><%= "Stitch Count: #{@pattern.size}"%></h6>
-          <h5 class="card-text pt-3">
-            <h5>Metallic Threads</h5>
-            <% Metallic.includes(:patterns).each do |metallic| %>
+          <div class="card-text pt-3">
+            <h6 class="display-6">Metallic Threads</h6>
+            <% Metallic.all.includes(:patterns).each do |metallic| %>
               <% if "#{@pattern.pattern_name}".in? "#{metallic.pattern}" %>
                 <ul>
                   <li><%= link_to "#{metallic.thread_type} #{metallic.number}", metallic %>
@@ -25,9 +25,9 @@
                 </ul>
               <%end%>
             <% end %>
-          </h6>
-          <h6 class="card-text display-6">
-            <h5 class="pt-3">Beads</h5>
+          </div>
+          <div class="card-text pt-3">
+            <h6 class="display-6">Beads</h6>
             <% Bead.all.includes(:patterns).each do |bead| %>
               <% if "#{@pattern.pattern_name}".in? "#{bead.pattern}" %>
                 <ul>
@@ -39,9 +39,9 @@
                 </ul>
               <% end %>
             <% end %>        
-          </h6>
-          <h6 class="card-text display-6">
-            <h5 class="pt-3">Silks</h5>
+          </div>
+          <div class="card-text pt-3">
+            <h6 class="display-6">Silks</h6>
             <% Silk.all.includes(:patterns).each do |silk| %>
               <% if "#{@pattern.pattern_name}".in? "#{silk.pattern}" %>
                 <ul>
@@ -53,7 +53,7 @@
                 </ul>
               <% end %>
             <% end %>        
-          </h6>
+          </div>
         <div class="pt-5 pb-5">
           <%= link_to "Edit Pattern", edit_pattern_path(@pattern), class: "btn btn-secondary float-start" %>
           <%= button_to "Delete Pattern", @pattern , method: :delete, class: "btn btn-outline-danger ms-3 float-start" %> 
