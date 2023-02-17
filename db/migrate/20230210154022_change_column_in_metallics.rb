@@ -1,5 +1,9 @@
 class ChangeColumnInMetallics < ActiveRecord::Migration[7.0]
-  def change
+  def down
+
     change_column :metallics, :pattern, array: true, default: []
+  end
+  def up
+    change_column :metallics, :pattern, :string, array: true, default: []
   end
 end
