@@ -5,7 +5,7 @@ class BeadsController < ApplicationController
   # GET /beads or /beads.json
   def index
     @q = Bead.ransack(params[:q])
-    @beads= @q.result(distinct: true)
+    @beads= @q.result(distinct: true) || Bead.all
   end
 
   # GET /beads/1 or /beads/1.json
