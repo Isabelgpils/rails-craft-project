@@ -5,7 +5,7 @@ class DmcsController < ApplicationController
     # GET /articles or /articles.json
   def index
     @q = Dmc.ransack(params[:q])
-    @dmcs = @q.result(distinct: true)
+    @dmcs = @q.result(distinct: true) || Dmc.all
     # @dmcs = Dmc.all
   end
 
