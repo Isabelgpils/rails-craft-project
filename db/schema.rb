@@ -92,6 +92,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_13_033725) do
     t.string "metallic_type"
   end
 
+  create_table "metallics_patterns", id: false, force: :cascade do |t|
+    t.bigint "pattern_id"
+    t.bigint "metallic_id"
+    t.index ["metallic_id"], name: "index_metallics_patterns_on_metallic_id"
+    t.index ["pattern_id"], name: "index_metallics_patterns_on_pattern_id"
+  end
+
   create_table "patterns", force: :cascade do |t|
     t.string "brand"
     t.string "pattern_name"
