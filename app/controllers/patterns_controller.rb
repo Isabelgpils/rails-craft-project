@@ -14,8 +14,8 @@ class PatternsController < ApplicationController
 
   # GET /patterns/new
   def new
-    # @pattern = Pattern.new
-    @pattern = current_user.patterns.build
+    @pattern = Pattern.new
+    # @pattern = current_user.patterns.build
   end
 
   # GET /patterns/1/edit
@@ -24,8 +24,8 @@ class PatternsController < ApplicationController
 
   # POST /patterns or /patterns.json
   def create
-    # @pattern = Pattern.new(pattern_params)
-    @pattern = current_user.patterns.build(pattern_params)
+    @pattern = Pattern.new(pattern_params)
+    # @pattern = current_user.patterns.build(pattern_params)
     respond_to do |format|
       if @pattern.save
         format.html { redirect_to pattern_url(@pattern), notice: "Pattern was successfully created." }
