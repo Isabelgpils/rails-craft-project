@@ -14,8 +14,7 @@
     </div>
   </div> 
   <div class="row align-items-start">
-    <% @patterns.sort_by{|pattern| [pattern.brand, pattern.number]}.each do |pattern| %>
-      <%# <% if pattern.user == current_user %> 
+    <% @patterns.each do |pattern| %>
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card-deck mt-5">
           <div id="patterns" class="card mb-5 text-center" style="width: 18rem;">
@@ -32,7 +31,6 @@
           </div> 
         </div>
       </div>
-      <%# <% end %> 
     <% end %>
   </div>
 </div>

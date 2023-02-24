@@ -6,7 +6,6 @@ class MetallicsController < ApplicationController
   def index
     @q = Metallic.ransack(params[:q])
     @metallics= @q.result(distinct: true) || Metallic.all
-
   end
 
   # GET /metallics/1 or /metallics/1.json

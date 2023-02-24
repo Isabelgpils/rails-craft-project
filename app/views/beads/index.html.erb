@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="row align-items-start">
-    <% @beads.sort_by{|bead| bead.number}.each do |bead| %>
+    <% @beads.each do |bead| %>
       <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card-deck">
           <div id="beads" class="card mb-5 text-center" style="width: 12rem;">
@@ -22,7 +22,7 @@
               <%= image_tag bead.image, class: "card-img" %>
             <% end %> 
             <div class="card-body">
-              <h5 class="card-title"> <%= "Delica #{bead.number}"%></h5>
+              <h5 class="card-title"> <%= "#{bead.brand} #{bead.number}"%></h5>
             </div>
             <p>
               <%= link_to "Show this bead", bead, class: "btn btn-secondary" %>

@@ -3,4 +3,5 @@ class Pattern < ApplicationRecord
     # belongs_to :user
     has_and_belongs_to_many :metallics
     has_and_belongs_to_many :beads
+    default_scope {order(:brand, :number) }
 end
