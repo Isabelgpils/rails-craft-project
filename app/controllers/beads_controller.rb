@@ -68,6 +68,6 @@ class BeadsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def bead_params
-      params.require(:bead).permit(:number, :color, :pattern, :image, :stash, pattern_ids: [])
+      params.require(:bead).permit(:brand, :number, :color, :pattern, :image, :stash, pattern_ids: [])
     end
 end

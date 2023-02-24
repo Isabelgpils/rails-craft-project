@@ -11,7 +11,8 @@
       </div> 
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title display-6"><%= "Delica #{@bead.number}" %></h5>
+          <h5 class="card-title display-6"><%= @bead.number %></h5>
+          <h6 class="card-text"><%=  "Brand: #{@bead.brand}" %></h6>
           <h6 class="card-text"><%=  "Color: #{@bead.color}" %></h6>
           <h6 class="card-text"><%=  "All Patterns: #{@bead.pattern}" %></h6>
           <div class="pt-5 pb-5">
