@@ -6,7 +6,7 @@ class DmcsController < ApplicationController
   def index
     @q = Dmc.ransack(params[:q])
     @dmcs = @q.result(distinct: true) || Dmc.all
-    # @dmcs = Dmc.all
+    
   end
 
   # GET /dmcs/1 or /dmcs/1.json
@@ -68,6 +68,6 @@ class DmcsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def dmc_params
-      params.require(:dmc).permit(:number, :color, :rgb_value, :image, :stash)
+      params.require(:dmc).permit(:number, :color, :rgb_value, :image, :patttern, :stash, pattern_ids: [])
     end
 end
