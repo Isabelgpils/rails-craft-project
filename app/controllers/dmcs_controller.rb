@@ -68,6 +68,6 @@ class DmcsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def dmc_params
-      params.require(:dmc).permit(:number, :color, :rgb_value, :image, :patttern, :stash, pattern_ids: [])
+      params.require(:dmc).permit(:number, :color, :rgb_value, :image, :pattern, :stash, pattern_ids: [])
     end
 end
