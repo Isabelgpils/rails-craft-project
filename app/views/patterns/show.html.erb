@@ -30,7 +30,7 @@
               <% if "#{@pattern.pattern_name}".in? "#{dmc.pattern}" %>
                 <ul class="list-group ">
                   <li class="list-group-item">
-                    <% if metallic.stash? %>
+                    <% if dmc.stash? %>
                       <i class="bi bi-bag-check-fill text-success"></i>
                     <% else %> 
                       <i  class="bi bi-bag-x-fill text-danger"></i>
@@ -95,9 +95,15 @@
           <% Bead.all.includes(:patterns).each do |bead| %>
             <% if "#{@pattern.pattern_name}".in? "#{bead.pattern}" %>
               <ul class="list-group">
-                <li class="list-group-item"><%= link_to "#{bead.brand} #{bead.number}", bead %>                
+                <li class="list-group-item">
+                  <% if bead.stash? %>
+                    <i class="bi bi-bag-check-fill text-success"></i>
+                  <% else %> 
+                    <i  class="bi bi-bag-x-fill text-danger"></i>
+                  <% end %>
+                  <%= link_to "#{bead.brand} #{bead.number}", bead %>                
                   <% if bead.image.present? %>
-                    <%= image_tag bead.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
+                    <%= image_tag bead.image, class: "thumbnail float-end", style: "width: 45px; height: 30px;"%>
                   <% end %>
                 </li>            
               </ul>
