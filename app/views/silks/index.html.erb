@@ -24,6 +24,13 @@
             <div class="card-body">
               <h5 class="card-title"><%= "#{silk.brand} #{silk.number}"%></h5>
               <p class="card-text"><%= silk.color%></p>
+              <p class="card-text">
+                <% if silk.stash? %>
+                  <i style="color: green;" class="bi bi-bag-check-fill"></i>
+                <% else %> 
+                  <i style= "color: red;" class="bi bi-bag-x-fill"></i>
+                <% end %>
+              </p>
             </div>
             <p>
               <%= link_to "Show this Silk", silk, class: "btn btn-secondary" %>

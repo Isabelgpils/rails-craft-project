@@ -11,7 +11,13 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title display-6"><%= "#{@silk.color}"%></h5>
+          <h5 class="card-title display-6"><%= "#{@silk.color}"%>
+            <% if silk.stash? %>
+              <i style="color: green;" class="bi bi-bag-check-fill"></i>
+            <% else %> 
+              <i style= "color: red;" class="bi bi-bag-x-fill"></i>
+            <% end %>
+          </h5>
           <h6 class="card-text"><%= "Number:  #{@silk.number}"%></h6> 
           <h6 class="card-title"><%= "Brand: #{@silk.thread_type}"%></h6>
           <h6 class="card-title"><%= "All Patterns: #{@silk.pattern}"%></h6> 
