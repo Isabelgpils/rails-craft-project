@@ -29,9 +29,15 @@
             <% Dmc.all.includes(:patterns).each do |dmc| %> 
               <% if "#{@pattern.pattern_name}".in? "#{dmc.pattern}" %>
                 <ul class="list-group ">
-                  <li class="list-group-item"><%= link_to "#{dmc.number}", dmc %>                
+                  <li class="list-group-item">
+                    <% if metallic.stash? %>
+                      <i class="bi bi-bag-check-fill text-success"></i>
+                    <% else %> 
+                      <i  class="bi bi-bag-x-fill text-danger"></i>
+                    <% end %>
+                    <%= link_to "#{dmc.number}", dmc %>                
                     <% if dmc.image.present? %>
-                      <%= image_tag dmc.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
+                      <%= image_tag dmc.image, class: "thumbnail float-end", style: "width: 45px; height: 30px;"%>
                     <% end %>
                   </li>            
                 </ul>
@@ -45,9 +51,15 @@
           <% Metallic.all.includes(:patterns).each do |metallic| %>
             <% if "#{@pattern.pattern_name}".in? "#{metallic.pattern}" %>
               <ul class="list-group">
-                <li class="list-group-item"><%= link_to "#{metallic.thread_type} #{metallic.number}", metallic %>
+                <li class="list-group-item">
+                  <% if metallic.stash? %>
+                    <i class="bi bi-bag-check-fill text-success"></i>
+                  <% else %> 
+                    <i  class="bi bi-bag-x-fill text-danger"></i>
+                  <% end %>
+                  <%= link_to "#{metallic.thread_type} #{metallic.number}", metallic %>
                   <% if metallic.image.present? %>
-                    <%= image_tag metallic.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
+                    <%= image_tag metallic.image, class: "thumbnail float-end", style: "width: 45px; height: 30px;"%>
                   <% end %>
                 </li>            
               </ul>
@@ -61,9 +73,15 @@
             <% Silk.all.includes(:patterns).each do |silk| %> 
               <% if "#{@pattern.pattern_name}".in? "#{silk.pattern}" %>
                 <ul class="list-group">
-                  <li class="list-group-item"><%= link_to "#{silk.brand} #{silk.number}", silk %>                
+                  <li class="list-group-item">
+                    <% if silk.stash? %>
+                      <i class="bi bi-bag-check-fill text-success"></i>
+                    <% else %> 
+                      <i  class="bi bi-bag-x-fill text-danger"></i>
+                    <% end %>
+                    <%= link_to "#{silk.brand} #{silk.number}", silk %>      
                     <% if silk.image.present? %>
-                      <%= image_tag silk.image, class: "thumbnail float-start", style: "width: 45px; height: 30px;"%>
+                      <%= image_tag silk.image, class: "thumbnail float-end", style: "width: 45px; height: 30px;"%>
                     <% end %>
                   </li>            
                 </ul>
