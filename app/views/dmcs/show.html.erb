@@ -12,7 +12,13 @@
       </div> 
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"><%= "DMC #{@dmc.number}" %></h5>
+          <h5 class="card-title"><%= "DMC #{@dmc.number}" %>
+            <% if dmc.stash? %>
+              <i style="color: green;" class="bi bi-bag-check-fill"></i>
+            <% else %> 
+              <i style= "color: red;" class="bi bi-bag-x-fill"></i>
+            <% end %>
+          </h5>
           <p class="card-text"><%=  @dmc.color %></p>
           <p class="card-text"><%= "Patterns: #{@dmc.pattern}" %></p>
           <div class="mb-5">

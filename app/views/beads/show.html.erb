@@ -12,6 +12,11 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title display-6"><%= @bead.number %></h5>
+            <% if @metallic.stash? %>
+              <i class="bi bi-bag-check-fill text-success"></i>
+            <% else %> 
+              <i  class="bi bi-bag-x-fill text-danger"></i>
+            <% end %>
           <h6 class="card-text"><%=  "Brand: #{@bead.brand}" %></h6>
           <h6 class="card-text"><%=  "Color: #{@bead.color}" %></h6>
           <h6 class="card-text"><%=  "All Patterns: #{@bead.pattern}" %></h6>
